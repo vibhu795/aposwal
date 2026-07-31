@@ -1,0 +1,467 @@
+/* Homepage layout */
+.homepage-content {
+  padding-bottom: 60px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* 1. Carousel Styles */
+.hero-carousel-section {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  padding: 48px 64px;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+}
+
+.carousel-text-area {
+  max-width: 55%;
+  z-index: 5;
+  text-align: left;
+}
+
+.carousel-badge {
+  display: inline-block;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.carousel-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+
+.carousel-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.carousel-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.carousel-cta-btn {
+  padding: 12px 28px;
+}
+
+/* Graphic Carousel Illustration styling */
+.carousel-graphic-area {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.graphic-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-full);
+  background-color: var(--surface);
+  border: 4px dashed var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  animation: rotateDashed 40s linear infinite;
+}
+
+.graphic-emoji {
+  font-size: 5rem;
+  animation: bounceSlow 3s ease-in-out infinite;
+}
+
+/* Floating Dots on Carousel Graphic */
+.dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+.dot-1 { top: 20px; left: 20px; animation: floatAnim 4s ease infinite; }
+.dot-2 { bottom: 20px; right: 25px; animation: floatAnim 5s ease infinite 1s; }
+.dot-3 { top: 50%; right: 10px; animation: floatAnim 3s ease infinite 0.5s; }
+
+/* Arrows on Carousel */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--surface);
+  color: var(--text-main);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  z-index: 10;
+  transition: all var(--transition-fast);
+}
+
+.carousel-arrow:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-arrow.left { left: 16px; }
+.carousel-arrow.right { right: 16px; }
+
+/* Indicator dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background-color: rgba(46, 42, 38, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dot-indicator.active {
+  background-color: var(--primary);
+  width: 24px;
+}
+
+/* 2. Category grid layout */
+.shop-by-category {
+  margin-bottom: 56px;
+}
+
+.category-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.category-tile-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.category-tile-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 12px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform var(--transition-fast);
+}
+
+.category-tile-card:hover .category-tile-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.category-tile-name {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* 3. Promotional Double Banners */
+.promo-banners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.promo-banner-card {
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-pink { background: linear-gradient(135deg, #FFF0F2 0%, #FFDFE5 100%); }
+.banner-blue { background: linear-gradient(135deg, #EBF8FA 0%, #D4F1F4 100%); }
+
+.banner-text {
+  max-width: 70%;
+  text-align: left;
+}
+
+.banner-mini-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.promo-banner-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.promo-banner-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.banner-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.banner-emoji {
+  font-size: 4rem;
+  opacity: 0.85;
+}
+
+/* 4. Featured Scroll Carousel Row */
+.featured-products {
+  margin-bottom: 56px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.products-grid-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 8px 4px 20px 4px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-product-item {
+  min-width: 250px;
+  flex: 0 0 calc(25% - 15px);
+}
+
+/* Hide Scrollbar but preserve scrolling functionality */
+.products-grid-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.products-grid-scroll::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+}
+
+/* 5. Home products grid */
+.new-arrivals {
+  margin-bottom: 56px;
+}
+
+.home-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* 6. Trust Badges Row styling */
+.trust-badges-section {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  padding: 48px 0;
+  margin-top: 32px;
+}
+
+.trust-badges-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.trust-badge-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trust-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.bg-coral { background-color: rgba(255, 107, 53, 0.1); color: var(--primary); }
+.bg-yellow { background-color: rgba(255, 200, 87, 0.15); color: var(--secondary-hover); }
+.bg-blue { background-color: rgba(79, 176, 198, 0.1); color: var(--accent); }
+.bg-green { background-color: rgba(139, 195, 74, 0.1); color: var(--success); }
+
+.trust-badge-item h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.trust-badge-item p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  max-width: 80%;
+}
+
+/* Keyframes animations */
+@keyframes rotateDashed {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatAnim {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.05); }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .scroll-product-item {
+    flex: 0 0 calc(33.333% - 14px);
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-wrapper {
+    padding: 36px 44px;
+    min-height: 320px;
+  }
+  .carousel-title { font-size: 2rem; }
+  .carousel-subtitle { font-size: 1.15rem; }
+  .category-tiles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .promo-banners {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .home-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .scroll-product-item {
+    flex: 0 0 calc(50% - 10px);
+  }
+  .trust-badges-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    flex-direction: column;
+    padding: 32px 24px;
+    text-align: center;
+    align-items: center;
+  }
+  .carousel-text-area {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .carousel-graphic-area {
+    width: 180px;
+    height: 180px;
+  }
+  .graphic-circle {
+    width: 140px;
+    height: 140px;
+  }
+  .graphic-emoji {
+    font-size: 3.5rem;
+  }
+  .carousel-arrow {
+    display: none;
+  }
+}
