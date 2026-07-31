@@ -1,7 +1,7 @@
 import React, { useContext, useState, useMemo } from 'react';
 import { AppContext } from '../context/AppContext';
 import { ProductCard } from '../components/ProductCard';
-import { Star, Heart, ShoppingCart, CreditCard, ChevronRight, Check } from 'lucide-react';
+import { Star, Heart, ChevronRight, Check, MessageCircle } from 'lucide-react';
 import './ProductDetail.css';
 
 // Wait, the file with ProductIcon is ProductIcons.jsx. We must make sure the import matches exactly.
@@ -152,82 +152,22 @@ export const ProductDetail = () => {
 
           <div className="detail-divider"></div>
 
-          {/* Color swatch selection */}
-          {product.colors && product.colors.length > 0 && (
-            <div className="selection-group">
-              <div className="group-label-row">
-                <span>Color: <strong>{activeColor}</strong></span>
-              </div>
-              <div className="color-swatches-list">
-                {product.colors.map((col) => (
-                  <button 
-                    key={col.name}
-                    className={`color-swatch-btn ${activeColor === col.name ? 'active' : ''}`}
-                    style={{ backgroundColor: col.value }}
-                    onClick={() => setActiveColor(col.name)}
-                    title={col.name}
-                  >
-                    {activeColor === col.name && <Check size={14} className="checkmark" style={{ color: col.value === '#FFFFFF' ? '#000000' : '#FFFFFF' }} />}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Size/Age selection */}
-          {product.sizes && product.sizes.length > 0 && (
-            <div className="selection-group">
-              <div className="group-label-row">
-                <span>Select Size / Age: <strong>{activeSize}</strong></span>
-              </div>
-              <div className="size-swatches-list">
-                {product.sizes.map((sz) => (
-                  <button 
-                    key={sz}
-                    className={`size-swatch-btn ${activeSize === sz ? 'active' : ''}`}
-                    onClick={() => setActiveSize(sz)}
-                  >
-                    {sz}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Quantity Selector and Cart buttons */}
-          <div className="action-selection-row">
-            <div className="quantity-stepper">
-              <button onClick={handleQuantityDecrement}>-</button>
-              <input type="number" value={quantity} readOnly aria-label="Quantity" />
-              <button onClick={handleQuantityIncrement}>+</button>
-            </div>
-
-            <button 
-              className={`wishlist-icon-btn ${isSaved ? 'saved' : ''}`}
-              onClick={() => toggleWishlist(product)}
-              aria-label="Toggle Wishlist"
+          {/* WhatsApp Contact Section */}
+          <div className="whatsapp-contact-box">
+            <a 
+              href={`https://wa.me/918000781759?text=Hello,%20I'm%20interested%20in%20buying%20"${encodeURIComponent(product.name)}"%20(Price:%20₹${product.price}).`}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="whatsapp-contact-btn"
             >
-              <Heart size={20} fill={isSaved ? "var(--error-sale)" : "transparent"} stroke={isSaved ? "var(--error-sale)" : "var(--text-muted)"} />
-            </button>
-          </div>
-
-          <div className="purchase-buttons-row">
-            <button 
-              className="btn btn-primary add-to-cart-cta" 
-              onClick={handleAddToCart}
-              disabled={!product.inStock}
-            >
-              <ShoppingCart size={20} />
-              {product.inStock ? 'Add to Cart' : 'Out of Stock'}
-            </button>
-            <button 
-              className="btn btn-secondary buy-now-cta"
-              onClick={handleBuyNow}
-              disabled={!product.inStock}
-            >
-              <CreditCard size={20} />
-              Buy It Now
-            </button>
+              <svg viewBox="0 0 24 24" className="whatsapp-icon" fill="currentColor">
+                <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.982L2 22l5.233-1.371a9.994 9.994 0 004.773 1.21h.005c5.505 0 9.988-4.479 9.989-9.986 0-2.67-1.037-5.18-2.92-7.062A9.925 9.925 0 0012.012 2zM17.56 16.2c-.3-.15-1.774-.875-2.05-.976-.275-.1-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075a9.426 9.426 0 01-2.414-1.49 10.428 10.428 0 01-1.67-2.08c-.175-.3-.02-.46.13-.61.137-.133.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.588-.49-.508-.675-.518-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8 1.075-.275 1-.95 2.375-1.025 2.525-.075.15-.15.3-.025.525.42 1.3 1.34 2.38 2.59 2.9 1.25.52 2.35.42 3.225.29.3-.045.85-.35 1.025-.875.175-.525.175-.975.125-1.075-.05-.1-.2-.15-.5-.3z" />
+              </svg>
+              Contact Now
+            </a>
+            <p className="whatsapp-help-text">
+              Have questions or want to purchase this item? Click the button above to chat directly with us on WhatsApp.
+            </p>
           </div>
 
           <div className="detail-divider"></div>

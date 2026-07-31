@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { ProductIcon } from './ProductIcons';
-import { Heart, Star, ShoppingBag } from 'lucide-react';
+import { Heart, Star, MessageCircle } from 'lucide-react';
 import './ProductCard.css';
 
 export const ProductCard = ({ product }) => {
@@ -58,17 +58,16 @@ export const ProductCard = ({ product }) => {
           <ProductIcon type={product.iconType} className="product-card-image" />
         )}
         
-        {/* Quick Add Button Panel */}
+        {/* Contact Now Button Panel */}
         <button 
-          className="quick-add-btn btn btn-primary"
+          className="quick-add-btn btn btn-whatsapp"
           onClick={(e) => {
             e.stopPropagation();
-            addToCart(product, 1);
+            window.open(`https://wa.me/918000781759?text=Hello,%20I'm%20interested%20in%20buying%20"${encodeURIComponent(product.name)}"%20(Price:%20₹${product.price}).`, '_blank');
           }}
-          disabled={!product.inStock}
         >
-          <ShoppingBag size={16} />
-          {product.inStock ? 'Quick Add' : 'Out of Stock'}
+          <MessageCircle size={16} />
+          Contact Now
         </button>
       </div>
 

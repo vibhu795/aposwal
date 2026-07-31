@@ -110,15 +110,7 @@ export const Navbar = () => {
               {wishlist.length > 0 && <span className="action-badge">{wishlist.length}</span>}
             </button>
 
-            <button 
-              className="action-btn" 
-              onClick={() => navigateTo('cart')} 
-              title="Cart"
-              aria-label={`Shopping Cart, ${cartItemCount} items`}
-            >
-              <ShoppingCart size={22} strokeWidth={2} />
-              {cartItemCount > 0 && <span className="action-badge bg-primary">{cartItemCount}</span>}
-            </button>
+
 
             <button 
               className="action-btn" 

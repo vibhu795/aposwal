@@ -127,6 +127,18 @@ input, select, textarea {
   transform: translateY(-2px);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20ba5a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+
 .badge {
   display: inline-block;
   padding: 4px 10px;
