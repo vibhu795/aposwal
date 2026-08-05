@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import { Facebook, Instagram, Youtube, Twitter, Send, CheckCircle } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import './Footer.css';
 
 export const Footer = () => {
@@ -23,7 +24,7 @@ export const Footer = () => {
         {/* Brand Column */}
         <div className="footer-col brand-col">
           <div className="footer-logo">
-            <span className="brand-name">AP <span>Oswal</span></span>
+            <img src={logoImg} alt="AP Oswal Logo" className="footer-logo-img" />
           </div>
           <p className="brand-pitch">
             Soft, breathable, and premium woollen wear for newborns and toddlers. Hand-knitted comfort crafted with care, tradition, and certified skin-friendly fibers.

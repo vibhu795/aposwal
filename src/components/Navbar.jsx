@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import { Search, Heart, ShoppingCart, Menu, X } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import './Navbar.css';
 
 export const Navbar = () => {
@@ -58,19 +59,8 @@ export const Navbar = () => {
             <Menu size={24} />
           </button>
 
-          {/* Logo */}
           <div className="logo-section" onClick={() => navigateTo('home')}>
-            <svg viewBox="0 0 100 100" className="logo-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="42" fill="var(--secondary)" opacity="0.15" />
-              <circle cx="50" cy="50" r="28" fill="var(--primary)" stroke="var(--text-main)" strokeWidth="2.5" />
-              <line x1="20" y1="20" x2="70" y2="70" stroke="var(--text-main)" strokeWidth="3" strokeLinecap="round" />
-              <line x1="80" y1="20" x2="30" y2="70" stroke="var(--text-main)" strokeWidth="3" strokeLinecap="round" />
-              <circle cx="20" cy="20" r="4" fill="var(--secondary)" stroke="var(--text-main)" strokeWidth="1.5" />
-              <circle cx="80" cy="20" r="4" fill="var(--secondary)" stroke="var(--text-main)" strokeWidth="1.5" />
-              <path d="M35 50 Q50 65 65 50" stroke="var(--surface)" strokeWidth="2" fill="none" strokeLinecap="round" />
-              <path d="M40 40 Q50 25 60 40" stroke="var(--surface)" strokeWidth="2" fill="none" strokeLinecap="round" />
-            </svg>
-            <span className="brand-name">AP <span>Oswal</span></span>
+            <img src={logoImg} alt="AP Oswal Logo" className="brand-logo-img" />
           </div>
 
           {/* Search bar */}
