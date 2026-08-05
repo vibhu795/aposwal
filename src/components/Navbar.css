@@ -71,6 +71,7 @@
   height: 48px;
   object-fit: contain;
   display: block;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(54%) saturate(1455%) hue-rotate(345deg) brightness(103%) contrast(101%);
 }
 
 @media (max-width: 768px) {
