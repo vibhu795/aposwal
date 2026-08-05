@@ -74,31 +74,7 @@
     "imageBg": "#E8F0FE",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_ace29654f33f42ec8270dec2417e0476~mv2.jpg"
   },
-  {
-    "id": "prod-004",
-    "name": "BabySoft Fur Suit - Premium Cozy Onesie",
-    "category": "suits",
-    "categoryDisplay": "Baba Suits",
-    "price": 899,
-    "originalPrice": 1499,
-    "discount": "40% OFF",
-    "rating": 4.9,
-    "reviewsCount": 96,
-    "ageRange": "3-36 Months",
-    "gender": "Unisex",
-    "inStock": true,
-    "isNew": true,
-    "colors": [
-      {"name": "Soft Peach", "value": "#FFE5D9"},
-      {"name": "Pearly White", "value": "#FFFFFF"}
-    ],
-    "sizes": ["3-6M", "6-12M", "1-2Y", "2-3Y"],
-    "description": "The signature AP Oswal BabySoft fur suit. Heavyweight fleece-like woollen fabric with an integrated hood. Features full-length double-snaps for fast dressing and maximum insulation.",
-    "safetyInfo": "Superfine plush fleece fibers. Double-layered neck insulation. Nickel-free snaps.",
-    "sizeGuide": "3-6M (Height: 62-68cm) | 6-12M (Height: 68-80cm) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
-    "imageBg": "#FFEAD2",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_c719efbb6d98498884faa7573475565d~mv2.jpg"
-  },
+
   {
     "id": "prod-005",
     "name": "AP Oswal Snug Baby Blanket - Soft Touch 1",
@@ -124,31 +100,7 @@
     "imageBg": "#EDF2F4",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7abb227fbbb84705b86863e99e97db46~mv2.jpg"
   },
-  {
-    "id": "prod-006",
-    "name": "Woollen Sleeveless Ribbed Vest Cardigan",
-    "category": "suits",
-    "categoryDisplay": "Baba Suits",
-    "price": 299,
-    "originalPrice": 499,
-    "discount": "40% OFF",
-    "rating": 4.5,
-    "reviewsCount": 24,
-    "ageRange": "0-6 Months",
-    "gender": "Unisex",
-    "inStock": true,
-    "isNew": false,
-    "colors": [
-      {"name": "Lemon Yellow", "value": "#FCF6BD"},
-      {"name": "Pure Cream", "value": "#FFF9F2"}
-    ],
-    "sizes": ["0-3M", "3-6M", "6-12M"],
-    "description": "Knitted sleeveless innerwear vest, perfect for layering under overalls or jackets. Made of stretchy ribbed wool which fits snugly without squeezing baby's ribcage.",
-    "safetyInfo": "Flatlock comfort stitching to prevent chafing on skin.",
-    "sizeGuide": "0-3M (Height: 50-62cm) | 3-6M (Height: 62-68cm) | 6-12M (Height: 68-80cm).",
-    "imageBg": "#FCF6BD",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7dfcc96652c74aa6ad19f133af2d3695~mv2.jpg"
-  },
+
   {
     "id": "prod-007",
     "name": "6-24M Baby Sweater Set - Striped Cozy",
@@ -467,78 +419,7 @@
     "imageBg": "#FFFAD6",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7abb227fbbb84705b86863e99e97db46~mv2.jpg"
   },
-  {
-    "id": "prod-019",
-    "name": "BabySoft Fur Suit - Bear Blue Onesie",
-    "category": "suits",
-    "categoryDisplay": "Baba Suits",
-    "price": 849,
-    "originalPrice": 1399,
-    "discount": "39% OFF",
-    "rating": 4.8,
-    "reviewsCount": 67,
-    "ageRange": "3-24 Months",
-    "gender": "Boys",
-    "inStock": true,
-    "isNew": false,
-    "colors": [
-      {"name": "Baby Blue", "value": "#AED9E0"}
-    ],
-    "sizes": ["3-6M", "6-12M", "1-2Y"],
-    "description": "Fleece fur suit in beautiful baby blue color. Built-in cute bear ears on the hood make this winter suit absolutely adorable.",
-    "safetyInfo": "Safe zipper flap protector. Double thick thermal backing.",
-    "sizeGuide": "3-6M (62-68cm) | 6-12M (68-80cm) | 1-2Y (80-92cm).",
-    "imageBg": "#E8F0FE",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_c719efbb6d98498884faa7573475565d~mv2.jpg"
-  },
-  {
-    "id": "prod-020",
-    "name": "BabySoft Fur Suit - Bunny Pink Onesie",
-    "category": "suits",
-    "categoryDisplay": "Baba Suits",
-    "price": 849,
-    "originalPrice": 1399,
-    "discount": "39% OFF",
-    "rating": 4.9,
-    "reviewsCount": 78,
-    "ageRange": "3-24 Months",
-    "gender": "Girls",
-    "inStock": true,
-    "isNew": true,
-    "colors": [
-      {"name": "Bunny Pink", "value": "#FFC6C6"}
-    ],
-    "sizes": ["3-6M", "6-12M", "1-2Y"],
-    "description": "Cute bunny-eared hooded fur onesie. Thick velvet-like fleece exterior with clean snaps for easy diaper access.",
-    "safetyInfo": "Heavy-metal-free snaps. Combed cotton internal lining.",
-    "sizeGuide": "3-6M (62-68cm) | 6-12M (68-80cm) | 1-2Y (80-92cm).",
-    "imageBg": "#FDE2E4",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7abb227fbbb84705b86863e99e97db46~mv2.jpg"
-  },
-  {
-    "id": "prod-021",
-    "name": "BabySoft Fur Suit - Cream Bear Onesie",
-    "category": "suits",
-    "categoryDisplay": "Baba Suits",
-    "price": 899,
-    "originalPrice": 1499,
-    "discount": "40% OFF",
-    "rating": 4.7,
-    "reviewsCount": 42,
-    "ageRange": "3-24 Months",
-    "gender": "Unisex",
-    "inStock": true,
-    "isNew": false,
-    "colors": [
-      {"name": "Warm Cream", "value": "#FFEAD2"}
-    ],
-    "sizes": ["3-6M", "6-12M", "1-2Y"],
-    "description": "Unisex bear-hooded winter overallsonesie. Plush babysoft fur fabric keeps your infant warm down to 10 degrees.",
-    "safetyInfo": "Certified skin safe. Flat seam knitting inside.",
-    "sizeGuide": "3-6M (62-68cm) | 6-12M (68-80cm) | 1-2Y (80-92cm).",
-    "imageBg": "#FFEAD2",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_c719efbb6d98498884faa7573475565d~mv2.jpg"
-  },
+
   {
     "id": "prod-022",
     "name": "New Born Baby Woollen Sweater Set - Snowflake Knit",
