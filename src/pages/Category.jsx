@@ -147,22 +147,11 @@ export const Category = () => {
         <div className="summary-text">
           Showing <strong>{filteredProducts.length}</strong> products
         </div>
-
         <div className="controls-right">
           {/* Mobile Filter Button */}
           <button className="mobile-filter-trigger btn btn-outline" onClick={() => setMobileFiltersOpen(true)}>
             <Filter size={16} /> Filters
           </button>
-
-          <div className="sort-wrapper">
-            <ArrowUpDown size={16} className="sort-icon" />
-            <select value={filters.sortBy} onChange={handleSortChange} aria-label="Sort products">
-              <option value="popularity">Sort By: Popularity</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="rating">Average Rating</option>
-            </select>
-          </div>
         </div>
       </div>
 
@@ -195,27 +184,7 @@ export const Category = () => {
             </div>
           </div>
 
-          <div className="sidebar-divider"></div>
 
-          {/* Price Range Slider */}
-          <div className="filter-group">
-            <h4>Max Price</h4>
-            <div className="price-slider-box">
-              <input 
-                type="range" 
-                min="0" 
-                max="10000" 
-                step="250"
-                value={filters.priceRange[1]}
-                onChange={handlePriceSliderChange}
-                aria-label="Filter by price"
-              />
-              <div className="price-labels">
-                <span>₹0</span>
-                <span>₹{filters.priceRange[1]}</span>
-              </div>
-            </div>
-          </div>
 
           <div className="sidebar-divider"></div>
 
@@ -325,27 +294,7 @@ export const Category = () => {
                 </div>
               </div>
 
-              <div className="sidebar-divider"></div>
 
-              {/* Price range slider */}
-              <div className="filter-group">
-                <h4>Max Price</h4>
-                <div className="price-slider-box">
-                  <input 
-                    type="range" 
-                    min="0" 
-                    max="10000" 
-                    step="250"
-                    value={filters.priceRange[1]}
-                    onChange={handlePriceSliderChange}
-                    aria-label="Filter by price"
-                  />
-                  <div className="price-labels">
-                    <span>₹0</span>
-                    <span>₹{filters.priceRange[1]}</span>
-                  </div>
-                </div>
-              </div>
 
               <div className="sidebar-divider"></div>
 

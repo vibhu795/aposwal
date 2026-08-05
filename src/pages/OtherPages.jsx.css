@@ -58,239 +58,6 @@
   gap: 24px;
 }
 
-/* 2. Account & Orders details */
-.account-layout-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 32px;
-  align-items: start;
-}
-
-.account-profile-card {
-  background-color: var(--surface);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 32px 24px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-}
-
-.profile-avatar {
-  font-size: 3.5rem;
-  background-color: var(--bg-warm);
-  width: 90px;
-  height: 90px;
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 16px auto;
-  border: 2px solid var(--border-light);
-}
-
-.account-profile-card h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.profile-email {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  display: block;
-}
-
-.profile-phone {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  display: block;
-  margin-top: 2px;
-}
-
-.profile-divider {
-  height: 1px;
-  background-color: var(--border-light);
-  margin: 20px 0;
-}
-
-.profile-stat-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-}
-
-.profile-stat-row strong {
-  color: var(--text-main);
-}
-
-/* Orders List cards */
-.account-orders-section h3 {
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.orders-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.order-history-card {
-  background-color: var(--surface);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
-}
-
-.order-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--border-light);
-}
-
-.order-id {
-  font-size: 0.95rem;
-  display: block;
-}
-
-.order-date {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  display: block;
-  margin-top: 2px;
-}
-
-.order-status-badge {
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-}
-
-.status-processing {
-  background-color: rgba(79, 176, 198, 0.1);
-  color: var(--accent-hover);
-}
-
-.order-card-items {
-  padding: 16px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  border-bottom: 1px dashed var(--border-light);
-}
-
-.order-card-item-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.order-card-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 0;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.track-toggle-btn {
-  padding: 8px 20px;
-  font-size: 0.85rem;
-  border-radius: var(--radius-md);
-}
-
-/* Simulated Timeline tracker styles */
-.simulated-tracking-timeline {
-  background-color: var(--bg-warm);
-  border: 1.5px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.timeline-step {
-  display: flex;
-  gap: 16px;
-  position: relative;
-}
-
-.timeline-step::after {
-  content: '';
-  position: absolute;
-  top: 26px;
-  left: 11px;
-  bottom: -26px;
-  width: 2px;
-  background-color: var(--border-light);
-}
-
-.timeline-step:last-child::after {
-  display: none;
-}
-
-.timeline-node {
-  width: 24px;
-  height: 24px;
-  border-radius: var(--radius-full);
-  border: 2px solid var(--border-light);
-  background-color: var(--surface);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  z-index: 5;
-}
-
-.timeline-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.timeline-meta strong {
-  font-size: 0.9rem;
-  color: var(--text-main);
-}
-
-.timeline-meta span {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  line-height: 1.35;
-}
-
-/* Timeline status state changes */
-.timeline-step.done::after {
-  background-color: var(--success);
-}
-.timeline-step.done .timeline-node {
-  background-color: var(--success);
-  border-color: var(--success);
-  color: white;
-}
-
-.timeline-step.active .timeline-node {
-  border-color: var(--primary);
-  color: var(--primary);
-  font-size: 1.2rem;
-  animation: pulseNode 1.5s infinite;
-}
-.timeline-step.active .timeline-meta strong {
-  color: var(--primary);
-}
 
 /* 3. Store Locator layouts */
 .store-locator-grid {
@@ -613,6 +380,74 @@
   0% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.4); }
   70% { box-shadow: 0 0 0 8px rgba(255, 107, 53, 0); }
   100% { box-shadow: 0 0 0 0 rgba(255, 107, 53, 0); }
+}
+
+/* Clickable map overlay hover effect */
+.map-link-overlay-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.map-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: white;
+  border-radius: var(--radius-md);
+  z-index: 10;
+}
+
+.map-link-overlay-container:hover .map-hover-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(1px);
+}
+
+.map-hover-overlay .overlay-content {
+  background-color: var(--surface);
+  color: var(--text-main);
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border-light);
+}
+
+.map-link-overlay-container:hover .map-hover-overlay .overlay-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.overlay-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.overlay-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--primary);
+}
+
+.overlay-content p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
 }
 
 /* Responsive Overrides */

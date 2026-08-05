@@ -185,7 +185,7 @@ export const AppProvider = ({ children }) => {
     setOrders((prev) => [newOrder, ...prev]);
     clearCart();
     addToast('Order Placed Successfully!', 'success');
-    navigateTo('orders');
+    navigateTo('home');
     return orderId;
   };
 

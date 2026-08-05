@@ -4,6 +4,16 @@ import { ProductCard } from '../components/ProductCard';
 import { ChevronLeft, ChevronRight, Truck, RotateCcw, ShieldCheck, HeartHandshake, ArrowRight } from 'lucide-react';
 import './Home.css';
 
+// PNG illustrations
+import babySweaterImg from '../assets/baby_sweater.png';
+import babyFrockImg from '../assets/baby_frock.png';
+import babyOnesieImg from '../assets/baby_onesie.png';
+import babyBlanketImg from '../assets/baby_blanket.png';
+import babyBeanieImg from '../assets/baby_beanie.png';
+import teddyBearImg from '../assets/teddy_bear.png';
+import babyOnesieHeroImg from '../assets/baby_onesie_hero.png';
+import babyCarrierImg from '../assets/baby_carrier.png';
+
 export const Home = () => {
   const { products, navigateTo } = useContext(AppContext);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,7 +29,7 @@ export const Home = () => {
       category: 'sweaters',
       bgGradient: 'linear-gradient(135deg, #FFE3E0 0%, #FFF0D4 100%)',
       badgeColor: '#FF6B35',
-      illustration: 'wooden-toy'
+      illustration: teddyBearImg
     },
     {
       id: 2,
@@ -30,7 +40,7 @@ export const Home = () => {
       category: 'suits',
       bgGradient: 'linear-gradient(135deg, #E0F2F1 0%, #F5FBEF 100%)',
       badgeColor: '#8BC34A',
-      illustration: 'romper'
+      illustration: babyOnesieHeroImg
     },
     {
       id: 3,
@@ -41,7 +51,7 @@ export const Home = () => {
       category: 'blankets',
       bgGradient: 'linear-gradient(135deg, #E8F0FE 0%, #F3E8FF 100%)',
       badgeColor: '#4FB0C6',
-      illustration: 'carrier'
+      illustration: babyCarrierImg
     }
   ];
 
@@ -63,11 +73,11 @@ export const Home = () => {
 
   // Category list for rounded tiles grid
   const categoryTiles = [
-    { name: 'Sweaters', key: 'sweaters', icon: '🧣', bgColor: '#FFEAD2' },
-    { name: 'Frocks', key: 'frocks', icon: '👗', bgColor: '#FFEAD2' },
-    { name: 'Baba Suits', key: 'suits', icon: '👕', bgColor: '#E8F5E9' },
-    { name: 'Blankets', key: 'blankets', icon: '🛌', bgColor: '#EDE7F6' },
-    { name: 'Accessories', key: 'accessories', icon: '🧢', bgColor: '#FCF6BD' }
+    { name: 'Sweaters', key: 'sweaters', icon: babySweaterImg, bgColor: '#FFEAD2' },
+    { name: 'Frocks', key: 'frocks', icon: babyFrockImg, bgColor: '#FFEAD2' },
+    { name: 'Baba Suits', key: 'suits', icon: babyOnesieImg, bgColor: '#E8F5E9' },
+    { name: 'Blankets', key: 'blankets', icon: babyBlanketImg, bgColor: '#EDE7F6' },
+    { name: 'Accessories', key: 'accessories', icon: babyBeanieImg, bgColor: '#FCF6BD' }
   ];
 
   // Filter products for featured list (first 4 items that are inStock)
@@ -104,14 +114,13 @@ export const Home = () => {
               <div className="dot dot-1" style={{ backgroundColor: '#FF6B35' }}></div>
               <div className="dot dot-2" style={{ backgroundColor: '#FFC857' }}></div>
               <div className="dot dot-3" style={{ backgroundColor: '#4FB0C6' }}></div>
-              
-              {/* Cute illustration drawing */}
-              <span className="graphic-emoji">
-                {slides[currentSlide].illustration === 'wooden-toy' && '🧸'}
-                {slides[currentSlide].illustration === 'romper' && '👶'}
-                {slides[currentSlide].illustration === 'carrier' && '🎒'}
-              </span>
             </div>
+            {/* Cute illustration drawing */}
+            <img 
+              src={slides[currentSlide].illustration} 
+              alt={slides[currentSlide].title} 
+              className="graphic-image" 
+            />
           </div>
 
           {/* Navigation Controls */}
@@ -149,7 +158,7 @@ export const Home = () => {
               onClick={() => navigateTo('category', null, tile.key)}
             >
               <div className="category-tile-icon" style={{ backgroundColor: tile.bgColor }}>
-                {tile.icon}
+                <img src={tile.icon} alt={tile.name} className="category-img" />
               </div>
               <span className="category-tile-name">{tile.name}</span>
             </div>
@@ -166,7 +175,7 @@ export const Home = () => {
             <p>Ruffled hand-knit skirts and wool bloomers. Keeps your little princess cozy.</p>
             <span className="banner-link">Shop Frocks <ArrowRight size={14} /></span>
           </div>
-          <div className="banner-emoji">👗</div>
+          <img src={babyFrockImg} alt="Delightful Woollen Frocks" className="banner-img" />
         </div>
         <div className="promo-banner-card banner-blue hover-lift" onClick={() => navigateTo('category', null, 'accessories')}>
           <div className="banner-text">
@@ -175,7 +184,7 @@ export const Home = () => {
             <p>Double-layered winter hoods and pom-pom caps to insulate active toddlers.</p>
             <span className="banner-link">Explore Now <ArrowRight size={14} /></span>
           </div>
-          <div className="banner-emoji">🧢</div>
+          <img src={babyBeanieImg} alt="Monkey Caps & beanies" className="banner-img" />
         </div>
       </section>
 
@@ -212,39 +221,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* 6. TRUST BADGES ROW */}
-      <section className="trust-badges-section">
-        <div className="container trust-badges-container">
-          <div className="trust-badge-item">
-            <div className="trust-icon-box bg-coral">
-              <Truck size={24} />
-            </div>
-            <h4>Free Shipping</h4>
-            <p>On all purchases above ₹999 across India.</p>
-          </div>
-          <div className="trust-badge-item">
-            <div className="trust-icon-box bg-yellow">
-              <RotateCcw size={24} />
-            </div>
-            <h4>Easy 30-Day Returns</h4>
-            <p>No questions asked return or exchange policy.</p>
-          </div>
-          <div className="trust-badge-item">
-            <div className="trust-icon-box bg-blue">
-              <ShieldCheck size={24} />
-            </div>
-            <h4>Certified Safe Materials</h4>
-            <p>100% GOTS organic cotton & BPA-free toys.</p>
-          </div>
-          <div className="trust-badge-item">
-            <div className="trust-icon-box bg-green">
-              <HeartHandshake size={24} />
-            </div>
-            <h4>Parent Approved</h4>
-            <p>Pediatrician-tested skincare & nursing support.</p>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 };

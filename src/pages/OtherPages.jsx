@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import { ProductCard } from '../components/ProductCard';
-import { MapPin, Phone, Mail, Clock, Heart, Search, HelpCircle, Package, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Heart, Search, HelpCircle, Send } from 'lucide-react';
 import './OtherPages.css';
 
 // ==========================================
@@ -35,167 +35,70 @@ export const Wishlist = () => {
   );
 };
 
-
-// ==========================================
-// 2. ACCOUNT & ORDERS PAGE component
-// ==========================================
-export const AccountOrders = () => {
-  const { orders, navigateTo } = useContext(AppContext);
-  const [activeTrackingId, setActiveTrackingId] = useState(null);
-
-  const toggleTrack = (orderId) => {
-    setActiveTrackingId(activeTrackingId === orderId ? null : orderId);
-  };
-
-  return (
-    <div className="other-page-container container fade-in text-left">
-      <h1 className="other-page-title"><Package size={26} className="title-icon" /> My Account & Orders</h1>
-      <p className="other-page-subtitle">Manage billing settings, view transaction receipts and track shipping status.</p>
-
-      <div className="account-layout-grid">
-        {/* Left Card: Profile Meta */}
-        <div className="account-profile-card">
-          <div className="profile-avatar">👶</div>
-          <h3>Priyanshu Sharma</h3>
-          <span className="profile-email">priyanshu@gmail.com</span>
-          <span className="profile-phone">+91 98765 43210</span>
-          
-          <div className="profile-divider"></div>
-          
-          <div className="profile-stat-row">
-            <span>Orders Placed</span>
-            <strong>{orders.length}</strong>
-          </div>
-          <div className="profile-stat-row">
-            <span>Primary Wallet Balance</span>
-            <strong>₹0.00</strong>
-          </div>
-        </div>
-
-        {/* Right Card: Order History */}
-        <div className="account-orders-section">
-          <h3>Order History ({orders.length})</h3>
-          
-          {orders.length === 0 ? (
-            <div className="empty-state-card text-center">
-              <div className="empty-state-emoji">📦</div>
-              <h3>No Orders Placed Yet</h3>
-              <p>When you purchase products, your order status and details will be tracked here.</p>
-              <button className="btn btn-primary" onClick={() => navigateTo('category', null, 'all')}>
-                Start Shopping
-              </button>
-            </div>
-          ) : (
-            <div className="orders-list">
-              {orders.map((ord) => (
-                <div key={ord.orderId} className="order-history-card">
-                  <div className="order-card-header">
-                    <div>
-                      <span className="order-id">Order ID: <strong>{ord.orderId}</strong></span>
-                      <span className="order-date">Placed: {ord.date}</span>
-                    </div>
-                    <span className="order-status-badge status-processing">{ord.status}</span>
-                  </div>
-
-                  <div className="order-card-items">
-                    {ord.items.map((item, index) => (
-                      <div key={index} className="order-card-item-row">
-                        <span>{item.quantity}x {item.product.name} ({item.color} / {item.size})</span>
-                        <span>₹{item.product.price * item.quantity}</span>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="order-card-footer">
-                    <span>Paid via: <strong>{ord.paymentMethod}</strong></span>
-                    <span>Total Amount: <strong>₹{ord.total}</strong></span>
-                  </div>
-
-                  <button className="btn btn-secondary track-toggle-btn" onClick={() => toggleTrack(ord.orderId)}>
-                    {activeTrackingId === ord.orderId ? 'Hide Tracking Details' : 'Track Package'}
-                  </button>
-
-                  {/* Simulated Tracking Timeline */}
-                  {activeTrackingId === ord.orderId && (
-                    <div className="simulated-tracking-timeline fade-in">
-                      <div className="timeline-step done">
-                        <div className="timeline-node">✓</div>
-                        <div className="timeline-meta">
-                          <strong>Order Placed & Confirmed</strong>
-                          <span>We have received your payment.</span>
-                        </div>
-                      </div>
-                      <div className="timeline-step active">
-                        <div className="timeline-node">●</div>
-                        <div className="timeline-meta">
-                          <strong>Sanitized Packaging & Processing</strong>
-                          <span>Your items are being packed in eco-friendly protective wrappers.</span>
-                        </div>
-                      </div>
-                      <div className="timeline-step pending">
-                        <div className="timeline-node">○</div>
-                        <div className="timeline-meta">
-                          <strong>Courier Dispatch</strong>
-                          <span>Pending handover to DTDC Shipping Hub.</span>
-                        </div>
-                      </div>
-                      <div className="timeline-step pending">
-                        <div className="timeline-node">○</div>
-                        <div className="timeline-meta">
-                          <strong>Out for Delivery</strong>
-                          <span>Simulated notification will flash on your screen.</span>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-
 // ==========================================
 // 3. STORE LOCATOR PAGE component
 // ==========================================
 export const StoreLocator = () => {
-  const storeList = [
-    { id: 1, city: 'Jaipur', name: 'AP Oswal - Raja Park Flagship', address: '6/321 Raja Park, Valmiki Marg, Jaipur, Rajasthan, 302004', phone: '+91 8000781759', hours: '10:00 AM - 8:30 PM' },
-    { id: 2, city: 'New Delhi', name: 'AP Oswal - Delhi Distribution Hub', address: 'Shop 4B, Chandni Chowk Wholesale Market, New Delhi, 110006', phone: '+91 11 4350 5678', hours: '10:30 AM - 8:30 PM' },
-    { id: 3, city: 'Ludhiana', name: 'AP Oswal - Ludhiana Factory Outlet', address: 'Oswal Complex, Industrial Area A, Ludhiana, Punjab, 141003', phone: '+91 161 502 9876', hours: '10:00 AM - 8:00 PM' }
-  ];
+  const store = {
+    city: 'Jaipur',
+    name: 'AP Oswal - Raja Park Flagship',
+    address: '6/321 Raja Park, Valmiki Marg, Jaipur, Rajasthan, 302004',
+    phone: '+91 8000781759',
+    hours: '10:00 AM - 8:30 PM',
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=AP+Oswal+Raja+Park+Jaipur'
+  };
 
   return (
     <div className="other-page-container container fade-in text-left">
-      <h1 className="other-page-title"><MapPin size={26} className="title-icon" /> Store Locator</h1>
-      <p className="other-page-subtitle">Visit us in-store to inspect material fabrics and get pediatric sizing assistance.</p>
+      <h1 className="other-page-title justify-center"><MapPin size={26} className="title-icon" /> Store Locator</h1>
+      <p className="other-page-subtitle text-center">Visit us in-store to inspect material fabrics and get pediatric sizing assistance.</p>
 
       <div className="store-locator-grid">
-        {/* Left Side: Stores list */}
-        <div className="stores-list-cards">
-          {storeList.map((store) => (
-            <div key={store.id} className="store-card hover-lift">
-              <span className="store-city-badge">{store.city}</span>
-              <h3>{store.name}</h3>
-              <p className="store-address"><MapPin size={14} /> {store.address}</p>
-              <p className="store-phone"><Phone size={14} /> {store.phone}</p>
-              <p className="store-hours"><Clock size={14} /> {store.hours}</p>
-            </div>
-          ))}
+        {/* Left Column: Store Card */}
+        <div className="store-card hover-lift">
+          <span className="store-city-badge">{store.city}</span>
+          <h3>{store.name}</h3>
+          <p className="store-address"><MapPin size={16} /> {store.address}</p>
+          <p className="store-phone"><Phone size={16} /> {store.phone}</p>
+          <p className="store-hours"><Clock size={16} /> {store.hours}</p>
+          
+          <a 
+            href={store.mapUrl} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-primary w-full text-center store-map-btn"
+            style={{ marginTop: '20px', display: 'inline-block' }}
+          >
+            Get Directions
+          </a>
         </div>
 
-        {/* Right Side: Mock Map view */}
+        {/* Right Column: Clickable Map Card */}
         <div className="mock-map-box">
-          <div className="map-placeholder">
-            <span className="map-placeholder-emoji">🗺️</span>
-            <h3>Interactive Map Placeholder</h3>
-            <p>Select a store location card on the left to pin-point direct driving coordinates.</p>
-            <div className="map-gps-compass">GPS Connection Active</div>
-          </div>
+          <a 
+            href={store.mapUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="map-link-overlay-container"
+            title="Click to view on Google Maps"
+          >
+            <iframe
+              title="AP Oswal Raja Park Location Map"
+              src="https://maps.google.com/maps?q=AP%20Oswal,%20Raja%20Park,%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0, borderRadius: 'var(--radius-md)', pointerEvents: 'none' }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
+            <div className="map-hover-overlay">
+              <div className="overlay-content">
+                <span className="overlay-icon">📍</span>
+                <h3>Open in Google Maps</h3>
+                <p>Get live turn-by-turn navigation & directions</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

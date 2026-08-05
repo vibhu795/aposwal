@@ -10,7 +10,6 @@ import { Cart } from './pages/Cart';
 import { Checkout } from './pages/Checkout';
 import { 
   Wishlist, 
-  AccountOrders, 
   StoreLocator, 
   AboutUs, 
   ContactUs 
@@ -34,8 +33,7 @@ const AppContent = () => {
         {page === 'cart' && <Cart />}
         {page === 'checkout' && <Checkout />}
         {page === 'wishlist' && <Wishlist />}
-        {page === 'account' && <AccountOrders />}
-        {page === 'orders' && <AccountOrders />}
+
         {page === 'locator' && <StoreLocator />}
         {page === 'about' && <AboutUs />}
         {page === 'contact' && <ContactUs />}

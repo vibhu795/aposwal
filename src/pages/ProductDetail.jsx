@@ -36,15 +36,7 @@ export const ProductDetail = () => {
   const tabs = [
     { id: 'description', label: 'Description' },
     { id: 'sizeguide', label: 'Size Guide' },
-    { id: 'safety', label: 'Safety Info' },
-    { id: 'reviews', label: 'Reviews' }
-  ];
-
-  // Custom reviews list for demo
-  const mockReviews = [
-    { id: 1, author: 'Priya S.', rating: 5, date: '12 July 2026', comment: 'Extremely soft material! The double zipper is an absolute lifesaver for night diaper changes. My baby sleeps like a charm.' },
-    { id: 2, author: 'Vaibhav J.', rating: 4, date: '28 June 2026', comment: 'Very high quality organic fabric. Deducted one star just because shipping took 4 days, but the product itself is flawless.' },
-    { id: 3, author: 'Meera K.', rating: 5, date: '05 June 2026', comment: 'Super cute design. The GOTS organic certification gave me complete peace of mind. Will buy again in other colors!' }
+    { id: 'safety', label: 'Safety Info' }
   ];
 
   const handleQuantityIncrement = () => setQuantity(prev => prev + 1);
@@ -133,19 +125,6 @@ export const ProductDetail = () => {
           <div className="detail-header">
             <span className="detail-category-badge">{product.categoryDisplay}</span>
             <h1 className="detail-title">{product.name}</h1>
-
-            <div className="detail-ratings-row">
-              <div className="stars-row">{renderStars(product.rating)}</div>
-              <span className="rating-score"><strong>{product.rating}</strong> / 5</span>
-              <span className="reviews-count">({product.reviewsCount} customer reviews)</span>
-            </div>
-          </div>
-
-          {/* Pricing Row */}
-          <div className="detail-price-box">
-            <span className="current-price">₹{product.price}</span>
-            <span className="original-price">₹{product.originalPrice}</span>
-            <span className="discount-badge">{product.discount}</span>
           </div>
 
           <p className="detail-short-desc">{product.description}</p>
@@ -155,7 +134,7 @@ export const ProductDetail = () => {
           {/* WhatsApp Contact Section */}
           <div className="whatsapp-contact-box">
             <a 
-              href={`https://wa.me/918000781759?text=Hello,%20I'm%20interested%20in%20buying%20"${encodeURIComponent(product.name)}"%20(Price:%20₹${product.price}).`}
+              href={`https://wa.me/918000781759?text=Hello,%20I'm%20interested%20in%20buying%20"${encodeURIComponent(product.name)}".`}
               target="_blank" 
               rel="noopener noreferrer"
               className="whatsapp-contact-btn"
@@ -174,7 +153,7 @@ export const ProductDetail = () => {
 
           {/* Trust note */}
           <div className="shipping-trust-note">
-            <span>🚀 Dispatch within 24 hours. Free Shipping on orders over ₹999.</span>
+            <span>🚀 Dispatch within 24 hours. Free Shipping.</span>
           </div>
         </div>
       </div>
@@ -279,25 +258,7 @@ export const ProductDetail = () => {
             </div>
           )}
 
-          {activeTab === 'reviews' && (
-            <div className="tab-pane fade-in">
-              <h3>Customer Reviews ({mockReviews.length})</h3>
-              <div className="reviews-list-container">
-                {mockReviews.map((rev) => (
-                  <div key={rev.id} className="review-card">
-                    <div className="review-card-header">
-                      <strong>{rev.author}</strong>
-                      <span className="review-date">{rev.date}</span>
-                    </div>
-                    <div className="review-rating-stars" style={{ margin: '4px 0' }}>
-                      {renderStars(rev.rating)}
-                    </div>
-                    <p className="review-comment-text">{rev.comment}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+
         </div>
       </section>
 

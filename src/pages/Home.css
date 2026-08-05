@@ -109,8 +109,12 @@
   animation: rotateDashed 40s linear infinite;
 }
 
-.graphic-emoji {
-  font-size: 5rem;
+.graphic-image {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  z-index: 6;
   animation: bounceSlow 3s ease-in-out infinite;
 }
 
@@ -210,13 +214,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
   box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
   transition: transform var(--transition-fast);
 }
 
 .category-tile-card:hover .category-tile-icon {
   transform: scale(1.1) rotate(5deg);
+}
+
+.category-img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
 }
 
 .category-tile-name {
@@ -286,9 +296,19 @@
   gap: 6px;
 }
 
-.banner-emoji {
-  font-size: 4rem;
-  opacity: 0.85;
+.banner-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  position: absolute;
+  right: 24px;
+  bottom: 8px;
+  z-index: 2;
+  transition: transform var(--transition-normal);
+}
+
+.promo-banner-card:hover .banner-img {
+  transform: scale(1.1) translateY(-6px);
 }
 
 /* 4. Featured Scroll Carousel Row */
@@ -458,8 +478,9 @@
     width: 140px;
     height: 140px;
   }
-  .graphic-emoji {
-    font-size: 3.5rem;
+  .graphic-image {
+    width: 90px;
+    height: 90px;
   }
   .carousel-arrow {
     display: none;

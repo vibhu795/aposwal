@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
-import { Search, Heart, ShoppingCart, User, Menu, X, Gift, PhoneCall, MapPin } from 'lucide-react';
+import { Search, Heart, ShoppingCart, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 export const Navbar = () => {
@@ -44,17 +44,7 @@ export const Navbar = () => {
 
   return (
     <>
-      {/* 1. TOP ANNOUNCEMENT BAR */}
-      <div className="announcement-bar">
-        <div className="announcement-content">
-          <Gift size={14} />
-          <span>Free delivery on orders above ₹999! | Use Code: <strong>BABYBLISS</strong></span>
-        </div>
-        <div className="announcement-links">
-          <a href="#store-locator" onClick={(e) => { e.preventDefault(); navigateTo('locator'); }} className="top-bar-link"><MapPin size={12} /> Store Locator</a>
-          <a href="#contact" onClick={(e) => { e.preventDefault(); navigateTo('contact'); }} className="top-bar-link"><PhoneCall size={12} /> Contact Us</a>
-        </div>
-      </div>
+
 
       {/* 2. MAIN HEADER (Sticky) */}
       <header className="main-header">
@@ -112,14 +102,7 @@ export const Navbar = () => {
 
 
 
-            <button 
-              className="action-btn" 
-              onClick={() => navigateTo('account')} 
-              title="My Account"
-              aria-label="My Account"
-            >
-              <User size={22} strokeWidth={2} />
-            </button>
+
           </div>
         </div>
       </header>
@@ -197,7 +180,7 @@ export const Navbar = () => {
               <h3>My AP Oswal</h3>
               <ul className="drawer-menu-list secondary-list">
                 <li><a href="#wishlist" onClick={(e) => { e.preventDefault(); navigateTo('wishlist'); setMobileMenuOpen(false); }}>Wishlist ({wishlist.length})</a></li>
-                <li><a href="#orders" onClick={(e) => { e.preventDefault(); navigateTo('orders'); setMobileMenuOpen(false); }}>Track Order / Account</a></li>
+
                 <li><a href="#locator" onClick={(e) => { e.preventDefault(); navigateTo('locator'); setMobileMenuOpen(false); }}>Store Locator</a></li>
                 <li><a href="#about" onClick={(e) => { e.preventDefault(); navigateTo('about'); setMobileMenuOpen(false); }}>About Us</a></li>
                 <li><a href="#contact" onClick={(e) => { e.preventDefault(); navigateTo('contact'); setMobileMenuOpen(false); }}>Contact Customer Care</a></li>

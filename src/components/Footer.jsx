@@ -52,10 +52,7 @@ export const Footer = () => {
         <div className="footer-col">
           <h3>Customer Service</h3>
           <ul>
-            <li><a href="#orders" onClick={(e) => { e.preventDefault(); navigateTo('orders'); }}>Track Your Order</a></li>
             <li><a href="#contact" onClick={(e) => { e.preventDefault(); navigateTo('contact'); }}>Contact Support</a></li>
-            <li><a href="#shipping" onClick={(e) => { e.preventDefault(); navigateTo('about'); }}>Shipping & Delivery</a></li>
-            <li><a href="#returns" onClick={(e) => { e.preventDefault(); navigateTo('about'); }}>Easy Returns Policy</a></li>
             <li><a href="#locator" onClick={(e) => { e.preventDefault(); navigateTo('locator'); }}>Find a Store</a></li>
           </ul>
         </div>
