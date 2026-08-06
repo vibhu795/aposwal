@@ -527,8 +527,8 @@
 
   /* Section Spacing & Headings */
   .hero-carousel-section { margin-bottom: 48px; }
-  .shop-by-category { margin-bottom: 48px; }
-  .promo-banners { margin-bottom: 48px; }
+  .shop-by-category { margin-bottom: 120px; }
+  .promo-banners { margin-top: 40px; margin-bottom: 1000px; }
   .featured-products { margin-bottom: 48px; }
   .new-arrivals { margin-bottom: 48px; }
 

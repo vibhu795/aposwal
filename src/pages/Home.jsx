@@ -238,15 +238,8 @@ export const Home = () => {
 
       {/* 4. FEATURED PRODUCTS SECTION */}
       <section className="featured-products container">
-        <div className="section-header">
-          <div>
-            <h2 className="section-title">Best Sellers</h2>
-            <p className="section-subtitle">Top products loved by thousands of parents</p>
-          </div>
-          <button className="btn btn-outline" onClick={() => navigateTo('category', null, 'all')}>
-            View All Products
-          </button>
-        </div>
+        <h2 className="section-title text-center">Best Sellers</h2>
+        <p className="section-subtitle text-center">Top products loved by thousands of parents</p>
 
         <div className="products-grid-scroll">
           {featuredProducts.map((prod) => (
@@ -266,6 +259,12 @@ export const Home = () => {
           {newArrivals.map((prod) => (
             <ProductCard key={prod.id} product={prod} />
           ))}
+        </div>
+
+        <div className="text-center" style={{ marginTop: '32px' }}>
+          <button className="btn btn-outline" onClick={() => navigateTo('category', null, 'all')}>
+            View All Products
+          </button>
         </div>
       </section>
 

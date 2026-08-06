@@ -56,13 +56,16 @@ export const AppProvider = ({ children }) => {
   }, [orders]);
 
   // Navigate helper
-  const navigateTo = (targetPage, productId = null, category = null) => {
+  const navigateTo = (targetPage, productId = null, category = null, preserveSearch = false) => {
     setPage(targetPage);
     if (productId) {
       setSelectedProductId(productId);
     }
     if (targetPage === 'category' && category) {
       setFilterCategory(category);
+    }
+    if (!preserveSearch) {
+      setSearchQuery('');
     }
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });

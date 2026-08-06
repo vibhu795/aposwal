@@ -131,10 +131,10 @@ export const Category = () => {
     if (filterCategory === 'suits' && selectedSuiteSize !== 'all') {
       result = result.filter(p => 
         p.sizes && p.sizes.some(size => {
-          if (selectedSuiteSize === 'Small' && (size === 'Small' || size === 'S')) return true;
-          if (selectedSuiteSize === 'Medium' && (size === 'Medium' || size === 'M' || size === 'mean')) return true;
-          if (selectedSuiteSize === 'Large' && (size === 'Large' || size === 'L')) return true;
-          if (selectedSuiteSize === 'Extra Large' && (size === 'Extra Large' || size === 'XL')) return true;
+          if (selectedSuiteSize === 'S' && (size === 'Small' || size === 'S')) return true;
+          if (selectedSuiteSize === 'M' && (size === 'Medium' || size === 'M' || size === 'mean')) return true;
+          if (selectedSuiteSize === 'L' && (size === 'Large' || size === 'L')) return true;
+          if (selectedSuiteSize === 'XL' && (size === 'Extra Large' || size === 'XL')) return true;
           return false;
         })
       );
@@ -200,7 +200,7 @@ export const Category = () => {
             <div className="baba-suits-size-filters">
               <span className="size-filter-label">Filter by Size:</span>
               <div className="size-filter-buttons">
-                {['all', 'Small', 'Medium', 'Large', 'Extra Large'].map((sizeOpt) => (
+                {['all', 'S', 'M', 'L', 'XL'].map((sizeOpt) => (
                   <button
                     key={sizeOpt}
                     className={`size-filter-opt-btn ${selectedSuiteSize === sizeOpt ? 'active' : ''}`}

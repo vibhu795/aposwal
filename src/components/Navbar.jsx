@@ -47,7 +47,7 @@ export const Navbar = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    navigateTo('category', null, 'all');
+    navigateTo('category', null, 'all', true);
     setMobileMenuOpen(false);
   };
 
@@ -109,7 +109,7 @@ export const Navbar = () => {
                     className="suggestion-item"
                     onClick={() => {
                       setSearchQuery(prod.name);
-                      navigateTo('product-detail', prod.id);
+                      navigateTo('product-detail', prod.id, null, true);
                     }}
                   >
                     {prod.imageUrl ? (
@@ -209,7 +209,7 @@ export const Navbar = () => {
                       className="suggestion-item"
                       onClick={() => {
                         setSearchQuery(prod.name);
-                        navigateTo('product-detail', prod.id);
+                        navigateTo('product-detail', prod.id, null, true);
                         setMobileMenuOpen(false);
                       }}
                     >
@@ -256,7 +256,6 @@ export const Navbar = () => {
                 <li><a href="#wishlist" onClick={(e) => { e.preventDefault(); navigateTo('wishlist'); setMobileMenuOpen(false); }}>Wishlist ({wishlist.length})</a></li>
 
                 <li><a href="#locator" onClick={(e) => { e.preventDefault(); navigateTo('locator'); setMobileMenuOpen(false); }}>Store Locator</a></li>
-                <li><a href="#about" onClick={(e) => { e.preventDefault(); navigateTo('about'); setMobileMenuOpen(false); }}>About Us</a></li>
                 <li><a href="#contact" onClick={(e) => { e.preventDefault(); navigateTo('contact'); setMobileMenuOpen(false); }}>Contact Customer Care</a></li>
               </ul>
             </div>

@@ -356,6 +356,7 @@
 .size-filter-buttons {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .size-filter-opt-btn {
@@ -380,4 +381,23 @@
   background-color: var(--primary);
   color: white;
   border-color: var(--primary);
+}
+
+@media (max-width: 576px) {
+  .baba-suits-size-filters {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+  .size-filter-buttons {
+    width: 100%;
+    gap: 8px;
+  }
+  .size-filter-opt-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    flex-grow: 1;
+    text-align: center;
+  }
 }
