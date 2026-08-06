@@ -19,6 +19,31 @@ import sweaterImg from '../assets/sweater.png';
 export const Home = () => {
   const { products, navigateTo } = useContext(AppContext);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) {
+      handleNextSlide();
+    } else if (isRightSwipe) {
+      handlePrevSlide();
+    }
+  };
 
   // Carousel slides definition
   const slides = [
@@ -95,7 +120,13 @@ export const Home = () => {
     <div className="homepage-content">
       {/* 1. HERO CAROUSEL BANNER */}
       <section className="hero-carousel-section container">
-        <div className="carousel-wrapper" style={{ background: slides[currentSlide].bgGradient }}>
+        <div 
+          className="carousel-wrapper" 
+          style={{ background: slides[currentSlide].bgGradient }}
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
           {/* Text Content */}
           <div className="carousel-text-area">
             <span className="carousel-badge" style={{ backgroundColor: slides[currentSlide].badgeColor }}>

@@ -485,6 +485,11 @@
 }
 
 @media (max-width: 768px) {
+  .scroll-product-item {
+    min-width: 160px !important;
+    flex: 0 0 65% !important;
+  }
+
   .carousel-wrapper {
     flex-direction: column;
     padding: 32px 24px;

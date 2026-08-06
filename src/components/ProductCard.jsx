@@ -39,18 +39,6 @@ export const ProductCard = ({ product }) => {
         ) : (
           <ProductIcon type={product.iconType} className="product-card-image" />
         )}
-        
-        {/* Contact Now Button Panel */}
-        <button 
-          className="quick-add-btn btn btn-whatsapp"
-          onClick={(e) => {
-            e.stopPropagation();
-            window.open(`https://wa.me/918000781759?text=Hello,%20I'm%20interested%20in%20buying%20"${encodeURIComponent(product.name)}".`, '_blank');
-          }}
-        >
-          <MessageCircle size={16} />
-          Contact Now
-        </button>
       </div>
 
       {/* Product Info details */}
