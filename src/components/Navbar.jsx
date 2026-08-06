@@ -181,14 +181,14 @@ export const Navbar = () => {
           <div className="mobile-drawer" onClick={(e) => e.stopPropagation()}>
             <div className="drawer-header">
               <div className="drawer-logo" onClick={() => { navigateTo('home'); setMobileMenuOpen(false); }}>
-                <span className="brand-name">AP <span>Oswal</span></span>
+                <img src={logoImg} alt="AP Oswal Logo" className="brand-logo-img drawer-logo-img" />
               </div>
               <button className="close-drawer-btn" onClick={() => setMobileMenuOpen(false)} aria-label="Close menu">
                 <X size={24} />
               </button>
             </div>
 
-            <div className="drawer-search">
+            <div className="drawer-search" style={{ position: 'relative' }}>
               <form onSubmit={handleSearchSubmit}>
                 <input 
                   type="text" 
@@ -200,6 +200,34 @@ export const Navbar = () => {
                   <Search size={18} />
                 </button>
               </form>
+
+              {searchQuery?.trim() && filteredSuggestions.length > 0 && (
+                <div className="search-suggestions-dropdown drawer-suggestions-dropdown">
+                  {filteredSuggestions.map((prod) => (
+                    <div 
+                      key={prod.id} 
+                      className="suggestion-item"
+                      onClick={() => {
+                        setSearchQuery(prod.name);
+                        navigateTo('product-detail', prod.id);
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {prod.imageUrl ? (
+                        <img src={prod.imageUrl} alt={prod.name} className="suggestion-img" />
+                      ) : (
+                        <div className="suggestion-img-placeholder">
+                          <ProductIcon type={prod.iconType} className="suggestion-icon" />
+                        </div>
+                      )}
+                      <div className="suggestion-info">
+                        <span className="suggestion-name">{prod.name}</span>
+                        <span className="suggestion-category">{prod.categoryDisplay || prod.category}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="drawer-content">

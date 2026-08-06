@@ -438,6 +438,13 @@
   }
   .header-container {
     height: 64px;
+    position: relative;
+  }
+  .logo-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
   }
   .brand-name {
     font-size: 1.3rem;
@@ -542,4 +549,19 @@
   color: var(--text-muted);
   text-transform: capitalize;
   margin-top: 2px;
+}
+
+.drawer-suggestions-dropdown {
+  z-index: 2100 !important;
+  max-height: 250px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.drawer-logo-img {
+  height: 38px !important;
+  object-fit: contain;
+  display: block;
 }

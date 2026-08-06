@@ -56,12 +56,12 @@ export const AppProvider = ({ children }) => {
   }, [orders]);
 
   // Navigate helper
-  const navigateTo = (targetPage, productId = null, category = 'all') => {
+  const navigateTo = (targetPage, productId = null, category = null) => {
     setPage(targetPage);
     if (productId) {
       setSelectedProductId(productId);
     }
-    if (category !== 'all') {
+    if (targetPage === 'category' && category) {
       setFilterCategory(category);
     }
     // Scroll to top
