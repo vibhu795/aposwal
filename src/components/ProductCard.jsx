@@ -28,10 +28,8 @@ export const ProductCard = ({ product }) => {
         </button>
       </div>
 
-      {/* Product Image Area */}
       <div 
         className="product-card-image-wrapper" 
-        style={{ backgroundColor: product.imageBg }}
         onClick={() => navigateTo('product-detail', product.id)}
       >
         {product.imageUrl ? (

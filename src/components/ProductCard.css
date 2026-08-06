@@ -100,7 +100,7 @@
 /* On Mobile/Touchscreens make Quick Add permanently visible or handle naturally */
 @media (max-width: 768px) {
   .product-card-image-wrapper {
-    padding: 12px;
+    padding: 0;
   }
   .product-card-details {
     padding: 10px;

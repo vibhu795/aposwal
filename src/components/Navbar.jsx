@@ -132,6 +132,15 @@ export const Navbar = () => {
           {/* Action Icons */}
           <div className="header-actions">
             <button 
+              className="action-btn search-toggle-btn" 
+              onClick={() => setMobileMenuOpen(true)}
+              title="Search"
+              aria-label="Search products"
+            >
+              <Search size={22} strokeWidth={2} />
+            </button>
+
+            <button 
               className="action-btn" 
               onClick={() => navigateTo('wishlist')} 
               title="Wishlist"
@@ -140,10 +149,6 @@ export const Navbar = () => {
               <Heart size={22} strokeWidth={2} />
               {wishlist.length > 0 && <span className="action-badge">{wishlist.length}</span>}
             </button>
-
-
-
-
           </div>
         </div>
       </header>
