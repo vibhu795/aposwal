@@ -60,9 +60,7 @@ export const ProductCard = ({ product }) => {
 
         {/* Stock Status Container */}
         <div className="product-stock-container">
-          {product.inStock ? (
-            <span className="stock-status-in-stock">In Stock</span>
-          ) : (
+          {!product.inStock && (
             <span className="stock-status-out">Sold Out</span>
           )}
         </div>

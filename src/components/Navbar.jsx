@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import { Search, Heart, ShoppingCart, Menu, X } from 'lucide-react';
+import { ProductIcon } from './ProductIcons';
 import logoImg from '../assets/logo.png';
+import { getSearchRelevanceScore } from '../utils/search';
 import './Navbar.css';
 
 export const Navbar = () => {
@@ -10,11 +12,24 @@ export const Navbar = () => {
     cartItemCount, 
     wishlist, 
     searchQuery, 
-    setSearchQuery 
+    setSearchQuery,
+    products
   } = useContext(AppContext);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchInputActive, setSearchInputActive] = useState(false);
+
+  const filteredSuggestions = searchQuery?.trim()
+    ? (products || [])
+        .map(product => ({
+          product,
+          score: getSearchRelevanceScore(product, searchQuery)
+        }))
+        .filter(item => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map(item => item.product)
+        .slice(0, 5)
+    : [];
 
   const categories = [
     { name: 'All Products', id: 'all', categoryKey: 'all' },
@@ -22,7 +37,12 @@ export const Navbar = () => {
     { name: 'Frocks', id: 'frocks', categoryKey: 'frocks' },
     { name: 'Baba Suits', id: 'suits', categoryKey: 'suits' },
     { name: 'Blankets', id: 'blankets', categoryKey: 'blankets' },
-    { name: 'Accessories', id: 'accessories', categoryKey: 'accessories' }
+    { name: 'Accessories', id: 'accessories', categoryKey: 'accessories' },
+    { name: 'Swed', id: 'swed', categoryKey: 'swed' },
+    { name: 'Caps', id: 'caps', categoryKey: 'caps' },
+    { name: 'Monkey Caps', id: 'monkey-caps', categoryKey: 'monkey-caps' },
+    { name: 'Vest', id: 'vests', categoryKey: 'vests' },
+    { name: 'Babysoft fursuits', id: 'babysoft-fursuits', categoryKey: 'babysoft-fursuits' }
   ];
 
   const handleSearchSubmit = (e) => {
@@ -64,19 +84,50 @@ export const Navbar = () => {
           </div>
 
           {/* Search bar */}
-          <form className={`search-bar-form ${searchInputActive ? 'focused' : ''}`} onSubmit={handleSearchSubmit}>
-            <input 
-              type="text" 
-              placeholder="Search woollen sweaters, baby soft suits, booties..." 
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              onFocus={() => setSearchInputActive(true)}
-              onBlur={() => setSearchInputActive(false)}
-            />
-            <button type="submit" aria-label="Search">
-              <Search size={20} />
-            </button>
-          </form>
+          <div className="search-bar-container">
+            <form className={`search-bar-form ${searchInputActive ? 'focused' : ''}`} onSubmit={handleSearchSubmit}>
+              <input 
+                type="text" 
+                placeholder="Search woollen sweaters, baby soft suits, booties..." 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onFocus={() => setSearchInputActive(true)}
+                onBlur={() => {
+                  setTimeout(() => setSearchInputActive(false), 200);
+                }}
+              />
+              <button type="submit" aria-label="Search">
+                <Search size={20} />
+              </button>
+            </form>
+
+            {searchInputActive && filteredSuggestions.length > 0 && (
+              <div className="search-suggestions-dropdown">
+                {filteredSuggestions.map((prod) => (
+                  <div 
+                    key={prod.id} 
+                    className="suggestion-item"
+                    onClick={() => {
+                      setSearchQuery(prod.name);
+                      navigateTo('product-detail', prod.id);
+                    }}
+                  >
+                    {prod.imageUrl ? (
+                      <img src={prod.imageUrl} alt={prod.name} className="suggestion-img" />
+                    ) : (
+                      <div className="suggestion-img-placeholder">
+                        <ProductIcon type={prod.iconType} className="suggestion-icon" />
+                      </div>
+                    )}
+                    <div className="suggestion-info">
+                      <span className="suggestion-name">{prod.name}</span>
+                      <span className="suggestion-category">{prod.categoryDisplay || prod.category}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* Action Icons */}
           <div className="header-actions">

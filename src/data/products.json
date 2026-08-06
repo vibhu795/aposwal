@@ -1,131 +1,2337 @@
 [
   {
-    "id": "prod-001",
-    "name": "New Born Baby Woollen Sweater Set - Playful Checks",
-    "category": "sweaters",
-    "categoryDisplay": "Sweaters",
-    "price": 699,
-    "originalPrice": 1199,
-    "discount": "41% OFF",
-    "rating": 4.8,
-    "reviewsCount": 84,
-    "ageRange": "0-6 Months",
+    "id": "prod-vest-001",
+    "name": "Vest",
+    "category": "vests",
+    "categoryDisplay": "Vest",
+    "price": 199,
+    "originalPrice": 319,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 28,
+    "ageRange": "0-12 Months",
     "gender": "Unisex",
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Peach Cream", "value": "#FFEAD2"},
-      {"name": "Mint Blue", "value": "#D8F3DC"}
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["0-3M", "3-6M", "6-12M"],
-    "description": "AP Oswal newborn baby woollen sweater set, knitted with ultra-soft Vardhman BabySoft wool. Includes double-knit round neck sweater, comfortable pull-on leggings, matching monkey cap, and soft socks.",
-    "safetyInfo": "100% baby-safe acrylic wool. Dyed with azo-free organic dyes. Non-scratch elastic stitching.",
-    "sizeGuide": "0-3M (Height: 50-62cm, Weight: 3-5.5kg) | 3-6M (Height: 62-68cm, Weight: 5.5-7.5kg) | 6-12M (Height: 68-80cm, Weight: 7.5-10kg).",
-    "imageBg": "#FFEAD2",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_67fccaf193f5430cb37c6b2e6b7a4ecb~mv2.jpg"
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "At Ap Oswal, we offer premium woollen vests for new born babies, designed to keep your little ones warm and comfortable. Crafted from soft, cozy wool, our vests provide gentle warmth perfect for delicate skin. As a trusted wholesale fabric manufacturer, we prioritize quality and care in every piece, ensuring reliable comfort for your customers. Discover the ease of sourcing cozy woolens for your little ones, just a click away with Ap Oswal.",
+    "safetyInfo": "Hypoallergenic wool mix. Safe organic dyes. Smooth flat seams to avoid scratching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_fa8c3d2d4f3640f1a0acc40ca955f5df~mv2.png"
   },
   {
-    "id": "prod-002",
-    "name": "Frock- DDD Woollen Princess Skirt Set",
+    "id": "prod-vest-002",
+    "name": "Vest",
+    "category": "vests",
+    "categoryDisplay": "Vest",
+    "price": 199,
+    "originalPrice": 319,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 57,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Woollen vest for new born babies",
+    "safetyInfo": "Hypoallergenic wool mix. Safe organic dyes. Smooth flat seams to avoid scratching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_9916f2a0cdf04391981188f03b6696d0~mv2.png"
+  },
+  {
+    "id": "prod-vest-003",
+    "name": "Vest",
+    "category": "vests",
+    "categoryDisplay": "Vest",
+    "price": 199,
+    "originalPrice": 319,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 17,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Woollen vest for new born babies",
+    "safetyInfo": "Hypoallergenic wool mix. Safe organic dyes. Smooth flat seams to avoid scratching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_1c66bb2ad0484970bffc59148da66be8~mv2.png"
+  },
+  {
+    "id": "prod-fursuit-001",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 29,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_799520a7a37b4055acf0222e46cde9f8~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-002",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 14,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_1f26e094997d44609f6c01ce1e0197e9~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-003",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 32,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_9cf6ccc6710f4c8abd6248a5284c193b~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-004",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 59,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_8148b36015384aeaba8aa54638d79345~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-005",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 43,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_cfcecac5bf1c42f99cc1029111dfc931~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-006",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 18,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_8978b19680294baf922950cbf2f19b3a~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-007",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 14,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7abb227fbbb84705b86863e99e97db46~mv2.jpg"
+  },
+  {
+    "id": "prod-fursuit-008",
+    "name": "BabySoft Fur Suit",
+    "category": "babysoft-fursuits",
+    "categoryDisplay": "Babysoft fursuits",
+    "price": 699,
+    "originalPrice": 1119,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 11,
+    "ageRange": "0-3 Years",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Winter White",
+        "value": "#FDFBF7"
+      },
+      {
+        "name": "Soft Peach",
+        "value": "#FDE2E4"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "This is BabySoft fur suit for new born kids.To available till 3 year old.",
+    "safetyInfo": "Ultra-soft baby-friendly faux fur. Certified allergen-free backing. Safe snap closures.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#FDFBF7",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_03873a2f2ae6413c91f923c21b16c565~mv2.jpg"
+  },
+  {
+    "id": "prod-swed-001",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 56,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_639fa7fe1d954de28ab7f3ef5beb84ee~mv2.jpg"
+  },
+  {
+    "id": "prod-swed-002",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 38,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_965618bae6a8438c99814bda31a77d46~mv2.jpg"
+  },
+  {
+    "id": "prod-swed-003",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 31,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_c719efbb6d98498884faa7573475565d~mv2.jpg"
+  },
+  {
+    "id": "prod-swed-004",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 51,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_b2bea0168bc94e7dbac12ac71264db7e~mv2.jpg"
+  },
+  {
+    "id": "prod-swed-005",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 43,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_fb87e6058f7749ff95448ea4779b0a3c~mv2.png"
+  },
+  {
+    "id": "prod-swed-006",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 59,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "20-24",
+      "26-30",
+      "32-36"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 20-24, 26-30, 32-36.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_779d0c0b6cfc455da4c35f7c297877b9~mv2.png"
+  },
+  {
+    "id": "prod-swed-007",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 20,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "20-24",
+      "26-30"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 20-24, 26-30.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_f5b08b49f08847c59f796c6d8f7d1d21~mv2.png"
+  },
+  {
+    "id": "prod-swed-008",
+    "name": "Swed",
+    "category": "swed",
+    "categoryDisplay": "Swed",
+    "price": 649,
+    "originalPrice": 1039,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 41,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "description": "These are woollen sweaters for babies.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 18, 20, 22, 24.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_23b56455d0ad41e18e696a05f0b0768f~mv2.jpg"
+  },
+  {
+    "id": "prod-monkeycap-001",
+    "name": "Monkey Cap",
+    "category": "monkey-caps",
+    "categoryDisplay": "Monkey Caps",
+    "price": 179,
+    "originalPrice": 289,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 27,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Baby Blue",
+        "value": "#AED9E0"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Check our comfy wool monkey caps for newborns at Ap Oswal. Gentle on baby's skin. Get yours now.",
+    "safetyInfo": "100% skin-friendly wool, certified organic dyes, flatlock stitching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_71ddc0f674cf4283bc42793c45c040d0~mv2.png"
+  },
+  {
+    "id": "prod-monkeycap-002",
+    "name": "Monkey Cap",
+    "category": "monkey-caps",
+    "categoryDisplay": "Monkey Caps",
+    "price": 179,
+    "originalPrice": 289,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 48,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Baby Blue",
+        "value": "#AED9E0"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Check our comfy wool monkey caps for newborns at Ap Oswal. Gentle on baby's skin. Get yours now.",
+    "safetyInfo": "100% skin-friendly wool, certified organic dyes, flatlock stitching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_1ba8066030a342a39b53b928571c6b35~mv2.png"
+  },
+  {
+    "id": "prod-monkeycap-003",
+    "name": "Monkey Cap",
+    "category": "monkey-caps",
+    "categoryDisplay": "Monkey Caps",
+    "price": 179,
+    "originalPrice": 289,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 18,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Baby Blue",
+        "value": "#AED9E0"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Check our comfy wool monkey caps for newborns at Ap Oswal. Gentle on baby's skin. Get yours now.",
+    "safetyInfo": "100% skin-friendly wool, certified organic dyes, flatlock stitching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_9b1ca88405c1403ab082b4a0b6e6451d~mv2.png"
+  },
+  {
+    "id": "prod-monkeycap-004",
+    "name": "Monkey Cap",
+    "category": "monkey-caps",
+    "categoryDisplay": "Monkey Caps",
+    "price": 179,
+    "originalPrice": 289,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 36,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Baby Blue",
+        "value": "#AED9E0"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Check our comfy wool monkey caps for newborns at Ap Oswal. Gentle on baby's skin. Get yours now.",
+    "safetyInfo": "100% skin-friendly wool, certified organic dyes, flatlock stitching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_a6fa3466b41d4b2d8121d89a06c4a8bb~mv2.png"
+  },
+  {
+    "id": "prod-monkeycap-005",
+    "name": "Monkey Cap",
+    "category": "monkey-caps",
+    "categoryDisplay": "Monkey Caps",
+    "price": 179,
+    "originalPrice": 289,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 21,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Baby Blue",
+        "value": "#AED9E0"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Check our comfy wool monkey caps for newborns at Ap Oswal. Gentle on baby's skin. Get yours now.",
+    "safetyInfo": "100% skin-friendly wool, certified organic dyes, flatlock stitching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_f4b6ecbc726642deb4b5a2e0d87cdda4~mv2.png"
+  },
+  {
+    "id": "prod-monkeycap-006",
+    "name": "Monkey Cap",
+    "category": "monkey-caps",
+    "categoryDisplay": "Monkey Caps",
+    "price": 179,
+    "originalPrice": 289,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 24,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Baby Blue",
+        "value": "#AED9E0"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Check our comfy wool monkey caps for newborns at Ap Oswal. Gentle on baby's skin. Get yours now.",
+    "safetyInfo": "100% skin-friendly wool, certified organic dyes, flatlock stitching.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_78558e16ec674c4ca067f4b18c04a4b5~mv2.jpg"
+  },
+  {
+    "id": "prod-cap-001",
+    "name": "Cap 78-C",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 78,
+    "originalPrice": 119,
+    "discount": "34% OFF",
+    "rating": 4.7,
+    "reviewsCount": 58,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Ap Oswal high-quality baby woolen cap. Super soft and gentle on baby's skin.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_5a54ea648ff24b5ca5e718c0dbe75a2c~mv2.png"
+  },
+  {
+    "id": "prod-cap-002",
+    "name": "Cap 78-D",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 78,
+    "originalPrice": 119,
+    "discount": "34% OFF",
+    "rating": 4.9,
+    "reviewsCount": 26,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Ap Oswal high-quality baby woolen cap. Super soft and gentle on baby's skin.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_1dada7746ed64caf8bade04f139bcffe~mv2.png"
+  },
+  {
+    "id": "prod-cap-003",
+    "name": "Cap 80-E",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 80,
+    "originalPrice": 129,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 16,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Ap Oswal high-quality baby woolen cap. Super soft and gentle on baby's skin.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_15eeb31b17f149e6a79eab44ce4cf9b4~mv2.png"
+  },
+  {
+    "id": "prod-cap-004",
+    "name": "Woollen Caps For New Born",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 110,
+    "originalPrice": 179,
+    "discount": "39% OFF",
+    "rating": 4.8,
+    "reviewsCount": 43,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Ap Oswal high-quality baby woolen cap. Super soft and gentle on baby's skin.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_c1afdc250bc74a55b9920565a824a7d1~mv2.png"
+  },
+  {
+    "id": "prod-cap-005",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 47,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_e8ecdbe8127043e6a7dcd3bad753a9cf~mv2.png"
+  },
+  {
+    "id": "prod-cap-006",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 58,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_4c1fe04d001b45abbd200c5cfcb105d5~mv2.png"
+  },
+  {
+    "id": "prod-cap-007",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 53,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_e8ecdbe8127043e6a7dcd3bad753a9cf~mv2.png"
+  },
+  {
+    "id": "prod-cap-008",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 38,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_4c1fe04d001b45abbd200c5cfcb105d5~mv2.png"
+  },
+  {
+    "id": "prod-cap-009",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 46,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_a57a78d9bc2e4b85acb0f1316f7d59b8~mv2.png"
+  },
+  {
+    "id": "prod-cap-010",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 23,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_b22be8ad98e7442fa72abdc44a6c623e~mv2.png"
+  },
+  {
+    "id": "prod-cap-011",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 22,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_5eb2cf5f7504430dadb43f0e7ae2aa18~mv2.png"
+  },
+  {
+    "id": "prod-cap-012",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 24,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_d8cef1ce951245cd90dafcf3cd60d2ca~mv2.png"
+  },
+  {
+    "id": "prod-cap-013",
+    "name": "Woollen Knited Caps",
+    "category": "caps",
+    "categoryDisplay": "Caps",
+    "price": 149,
+    "originalPrice": 239,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 50,
+    "ageRange": "0-12 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
+    ],
+    "sizes": [
+      "0-6M",
+      "6-12M"
+    ],
+    "description": "Feel the cozy warmth with our high-quality Ap Oswal wool caps. Super soft, they protect newborns and are a must-have for parents. Choose Ap Oswal for quality and care.",
+    "safetyInfo": "Hypoallergenic organic wool mix. Lead-free dyes.",
+    "sizeGuide": "Sizes available: 0-6M, 6-12M.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_ba05b4bb748a4e278b36f0b46c402277~mv2.jpg"
+  },
+  {
+    "id": "prod-sweater-001",
+    "name": "Round Neck Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 21,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_c1325cb58e8541ceba4f257799ec245e~mv2.png",
+    "sweaterType": "round-neck"
+  },
+  {
+    "id": "prod-sweater-002",
+    "name": "Front Open Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 38,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7dfcc96652c74aa6ad19f133af2d3695~mv2.jpg",
+    "sweaterType": "front-open"
+  },
+  {
+    "id": "prod-sweater-003",
+    "name": "Round Neck Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.7,
+    "reviewsCount": 31,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_4113b0981c4d4c2e8f041b5d5ba32a7c~mv2.png",
+    "sweaterType": "round-neck"
+  },
+  {
+    "id": "prod-sweater-004",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.5,
+    "reviewsCount": 54,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 6-12M, 1-2Y, 2-3Y.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_e08827dba0cd4ff4b3bd3e1f565cbace~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-005",
+    "name": "Round Neck Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.8,
+    "reviewsCount": 43,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_d6cb98040d49440d922243afb6973b44~mv2.png",
+    "sweaterType": "round-neck"
+  },
+  {
+    "id": "prod-sweater-006",
+    "name": "Round Neck Sweater For Baby",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.5,
+    "reviewsCount": 41,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_706a879258c74722ab07c13531cfb612~mv2.png",
+    "sweaterType": "round-neck"
+  },
+  {
+    "id": "prod-sweater-007",
+    "name": "Front Open Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.7,
+    "reviewsCount": 45,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_09644ca3f02446e4a3269754b3a0ee2a~mv2.png",
+    "sweaterType": "front-open"
+  },
+  {
+    "id": "prod-sweater-008",
+    "name": "Sweater with  Zipper",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.9,
+    "reviewsCount": 13,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_81e819f731fe4fe799459027c70f2504~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-009",
+    "name": "Sweater with Zipper",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.9,
+    "reviewsCount": 39,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "22-26",
+      "16-20"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 22-26, 16-20.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_e2b32ff5116f47f2a1c45bcfe3cca276~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-010",
+    "name": "Round Neck Colourful Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.6,
+    "reviewsCount": 41,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20"
+    ],
+    "description": "Ap Oswal high-quality woolen kids sweater, crafted with soft Vardhman babysoft yarn. Offers durable warmth and maximum comfort.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_f70f515b85a441f5abbd3855fafedb3a~mv2.png",
+    "sweaterType": "round-neck"
+  },
+  {
+    "id": "prod-sweater-011",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 44,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_f0790ccfe3dc41848a23a10ba7cc2535~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-012",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.6,
+    "reviewsCount": 57,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_8ff66f6d49ee40aa92814905c66ba9d7~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-013",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 36,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_a45f9f8d46124bfeba3834861a998605~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-014",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.5,
+    "reviewsCount": 39,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_079d89bf9cee440ea3c2bc6e81423966~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-015",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 33,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_747ae5c2b54246cebfffce508c47885c~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-016",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 36,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_864ea372c712445f814e97a3417eca48~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-017",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 45,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_b0f8705a46904027841e6ebbdc305655~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-018",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 45,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_47c6c03258654a92aec9dddbca92582e~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-sweater-019",
+    "name": "Sweater",
+    "category": "sweaters",
+    "categoryDisplay": "Sweaters",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 49,
+    "ageRange": "6-36 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
+    ],
+    "sizes": [
+      "16-20",
+      "22-26"
+    ],
+    "description": "Explore our cozy, comfy kids' sweaters made from quality wool. At Ap Oswal, we ensure each piece is soft, durable, and stylish. Browse our collection to see the Ap Oswal difference.",
+    "safetyInfo": "Hypoallergenic wool blend. Certified dye safety. Soft cuffs for maximum comfort.",
+    "sizeGuide": "Sizes available: 16-20, 22-26.",
+    "imageBg": "#E8F0FE",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_90fb1d156f724ae1a17fd070438fa344~mv2.png",
+    "sweaterType": "regular"
+  },
+  {
+    "id": "prod-frock-001",
+    "name": "Frock-GGG",
     "category": "frocks",
     "categoryDisplay": "Frocks",
-    "price": 549,
-    "originalPrice": 899,
-    "discount": "39% OFF",
-    "rating": 4.7,
-    "reviewsCount": 42,
-    "ageRange": "6-12 Months",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 18,
+    "ageRange": "6-24 Months",
     "gender": "Girls",
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Rose Pink", "value": "#FFC6C6"},
-      {"name": "Daisy Yellow", "value": "#FFF3A8"}
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["3-6M", "6-12M", "1-2Y"],
-    "description": "Lovely baby girl woollen frock featuring a cute hand-knitted floral design, ruffled empire waist, and matching woollen bloomers. Lightweight, breathable warmth.",
-    "safetyInfo": "Premium anti-pilling wool. No lead buttons. Hypoallergenic skin-friendly fibers.",
-    "sizeGuide": "3-6M (Chest: 44cm, Height: 62-68cm) | 6-12M (Chest: 48cm, Height: 68-80cm) | 1-2Y (Chest: 52cm, Height: 80-92cm).",
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Discover our cozy woolen frocks designed to keep your little ones warm and comfortable all season long. At Ap Oswal, we pride ourselves on delivering high-quality fabrics blended with softness and durability, perfect for children’s wear. Whether you’re a retailer or designer, our wholesale fabric options make it easy to create charming frocks that combine style and comfort. With just a click, explore our collection and experience the trusted service and value that define Ap Oswal. Cozy woolens for your little ones are now more accessible than ever.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
     "imageBg": "#FDE2E4",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_475bfb6641c2437e971a79d1d48f3dbc~mv2.jpg"
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_db50d4b3aee449e28a08be995088966c~mv2.jpg"
   },
   {
-    "id": "prod-003",
-    "name": "Swed Classic Buttoned Baby Sweater",
-    "category": "sweaters",
-    "categoryDisplay": "Sweaters",
-    "price": 499,
-    "originalPrice": 799,
-    "discount": "37% OFF",
-    "rating": 4.6,
-    "reviewsCount": 38,
-    "ageRange": "0-6 Months",
-    "gender": "Boys",
+    "id": "prod-frock-002",
+    "name": "Frock- DDD",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 26,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
     "inStock": true,
-    "isNew": false,
+    "isNew": true,
     "colors": [
-      {"name": "Sky Blue", "value": "#AED9E0"},
-      {"name": "Grey Melange", "value": "#D3D3D3"}
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["0-3M", "3-6M", "6-12M"],
-    "description": "A classic AP Oswal V-neck buttoned sweater cardigan. Easy slip-on design with durable child-safe plastic buttons. Keeps your infant cozy during chilly evening walks.",
-    "safetyInfo": "Hypoallergenic woollen threads. Certified lead-free buttons.",
-    "sizeGuide": "0-3M (Height: 50-62cm) | 3-6M (Height: 62-68cm) | 6-12M (Height: 68-80cm).",
-    "imageBg": "#E8F0FE",
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Discover our cozy woolen frocks designed to keep your little ones warm and comfortable all season long. At Ap Oswal, we pride ourselves on delivering high-quality fabrics blended with softness and durability, perfect for children’s wear. Whether you’re a retailer or designer, our wholesale fabric options make it easy to create charming frocks that combine style and comfort. With just a click, explore our collection and experience the trusted service and value that define Ap Oswal. Cozy woolens for your little ones are now more accessible than ever.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_ace29654f33f42ec8270dec2417e0476~mv2.jpg"
   },
-
-
-
   {
-    "id": "prod-007",
-    "name": "6-24M Baby Sweater Set - Striped Cozy",
-    "category": "sweaters",
-    "categoryDisplay": "Sweaters",
-    "price": 749,
-    "originalPrice": 1249,
-    "discount": "40% OFF",
-    "rating": 4.6,
-    "reviewsCount": 31,
-    "ageRange": "3-36 Months",
-    "gender": "Boys",
+    "id": "prod-frock-003",
+    "name": "Krochit Frock-NNN",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.7,
+    "reviewsCount": 34,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
     "inStock": true,
-    "isNew": false,
+    "isNew": true,
     "colors": [
-      {"name": "Navy Stripes", "value": "#BDD5EA"},
-      {"name": "Oatmeal Grey", "value": "#ECE4DB"}
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["6-12M", "1-2Y", "2-3Y"],
-    "description": "Double-layered knitted winter sweater suit for active toddlers. Elastic waistband trousers and matching neck-warming ribbed collar sweater.",
-    "safetyInfo": "Extra stretch knit threads. Child-proof loops.",
-    "sizeGuide": "6-12M (Height: 68-80cm) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
-    "imageBg": "#D8E2DC",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_b1f703b791404661bd521b073bfd0dbc~mv2.jpg"
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen frock, crafted with ultra-soft baby grade wool. Features a comfortable lightweight fit and keeps your child warm all winter.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_7da263248d554490bfd8f1763819bbb8~mv2.png"
   },
   {
-    "id": "prod-008",
-    "name": "Front Open Sweater Cardigan",
-    "category": "sweaters",
-    "categoryDisplay": "Sweaters",
-    "price": 549,
-    "originalPrice": 899,
-    "discount": "39% OFF",
-    "rating": 4.7,
-    "reviewsCount": 49,
-    "ageRange": "0-6 Months",
-    "gender": "Unisex",
+    "id": "prod-frock-004",
+    "name": "Frock-RRR",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.8,
+    "reviewsCount": 18,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Mint Green", "value": "#D8F3DC"},
-      {"name": "Peach Rose", "value": "#FDE2E4"}
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["0-3M", "3-6M", "6-12M"],
-    "description": "Classic front-open baby cardigan sweater with a rounded collar and cozy cuffs. Made of light, breathable, and warm woollen mix.",
-    "safetyInfo": "Hypoallergenic wool blend. Azo-free prints.",
-    "sizeGuide": "0-3M (Height: 50-62cm) | 3-6M (Height: 62-68cm) | 6-12M (Height: 68-80cm).",
-    "imageBg": "#E8F5E9",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_e83b35e211d445e7be47ecfa08577ad5~mv2.jpg"
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen frock, crafted with ultra-soft baby grade wool. Features a comfortable lightweight fit and keeps your child warm all winter.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_d33ef55b7cb648c9a10e7fba5ee7383f~mv2.png"
+  },
+  {
+    "id": "prod-frock-005",
+    "name": "Frock-SSS",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.7,
+    "reviewsCount": 53,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen frock, crafted with ultra-soft baby grade wool. Features a comfortable lightweight fit and keeps your child warm all winter.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_5f37db83921949cd82422ca1de75ea65~mv2.png"
+  },
+  {
+    "id": "prod-frock-006",
+    "name": "Frock-PPP",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 200,
+    "originalPrice": 319,
+    "discount": "37% OFF",
+    "rating": 4.8,
+    "reviewsCount": 26,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Ap Oswal high-quality woolen frock, crafted with ultra-soft baby grade wool. Features a comfortable lightweight fit and keeps your child warm all winter.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_a32098aba0f449c693e401b31a20719e~mv2.png"
+  },
+  {
+    "id": "prod-frock-007",
+    "name": "Krochit Frock",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 51,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Discover Krochit Frocks, crafted from premium wool to keep your child warm and comfortable. Ap Oswal, a trusted fabric maker, offers adorable, soft, cozy frocks. Shop quality and comfort with us, just a click away.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_5dd551c05658471d822db83d60e9acc6~mv2.png"
+  },
+  {
+    "id": "prod-frock-008",
+    "name": "Krochit Frock",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.9,
+    "reviewsCount": 23,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Discover Krochit Frocks, crafted from premium wool to keep your child warm and comfortable. Ap Oswal, a trusted fabric maker, offers adorable, soft, cozy frocks. Shop quality and comfort with us, just a click away.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_edeaed4fe3de46b9be2615585e74f6f0~mv2.png"
+  },
+  {
+    "id": "prod-frock-009",
+    "name": "Krochit Frock",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 20,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Discover Krochit Frocks, crafted from premium wool to keep your child warm and comfortable. Ap Oswal, a trusted fabric maker, offers adorable, soft, cozy frocks. Shop quality and comfort with us, just a click away.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_710d9316c9a341bf89fc8b188cfc1e73~mv2.png"
+  },
+  {
+    "id": "prod-frock-010",
+    "name": "Krochit Frock - kkk",
+    "category": "frocks",
+    "categoryDisplay": "Frocks",
+    "price": 599,
+    "originalPrice": 959,
+    "discount": "38% OFF",
+    "rating": 4.7,
+    "reviewsCount": 21,
+    "ageRange": "6-24 Months",
+    "gender": "Girls",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Peach Rose",
+        "value": "#FDE2E4"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
+    ],
+    "sizes": [
+      "6-12M",
+      "1-2Y",
+      "2-3Y"
+    ],
+    "description": "Discover Krochit Frocks, crafted from premium wool to keep your child warm and comfortable. Ap Oswal, a trusted fabric maker, offers adorable, soft, cozy frocks. Shop quality and comfort with us, just a click away.",
+    "safetyInfo": "100% baby-safe acrylic wool. Organic dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "6-12M (Height: 68-80cm, Weight: 7.5-10kg) | 1-2Y (Height: 80-92cm) | 2-3Y (Height: 92-98cm).",
+    "imageBg": "#FDE2E4",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_16deb1c2b8e74774aa21b364a8744a16~mv2.png"
   },
   {
     "id": "prod-009",
@@ -142,10 +2348,19 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Cream", "value": "#FFF9F2"},
-      {"name": "Soft Pink", "value": "#FFC6C6"}
+      {
+        "name": "Cream",
+        "value": "#FFF9F2"
+      },
+      {
+        "name": "Soft Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["3-6M", "6-12M"],
+    "sizes": [
+      "3-6M",
+      "6-12M"
+    ],
     "description": "Handmade with love and ultra-soft Vardhman wool, these classic cream crochet booties keep tiny feet warm and snug. Features soft tie closures to ensure they stay on wriggly baby feet.",
     "safetyInfo": "100% skin-friendly acrylic wool. Hand-knitted safety standards with no loose threads.",
     "sizeGuide": "3-6M (Sole length: 10cm) | 6-12M (Sole length: 11cm).",
@@ -167,10 +2382,19 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Pastel Pink", "value": "#F3C6F1"},
-      {"name": "Mint Green", "value": "#D8F3DC"}
+      {
+        "name": "Pastel Pink",
+        "value": "#F3C6F1"
+      },
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
     ],
-    "sizes": ["3-6M", "6-12M"],
+    "sizes": [
+      "3-6M",
+      "6-12M"
+    ],
     "description": "Super cozy and cute, these hand-knitted pastel crochet booties are perfect for delicate newborn feet. Crafted with skin-safe, breathable yarn for all-day comfort.",
     "safetyInfo": "Hypoallergenic woollen threads. Certified lead-free materials.",
     "sizeGuide": "3-6M (Sole length: 10cm) | 6-12M (Sole length: 11cm).",
@@ -192,10 +2416,18 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Deep Plum", "value": "#6B2D5C"},
-      {"name": "Oatmeal Grey", "value": "#ECE4DB"}
+      {
+        "name": "Deep Plum",
+        "value": "#6B2D5C"
+      },
+      {
+        "name": "Oatmeal Grey",
+        "value": "#ECE4DB"
+      }
     ],
-    "sizes": ["One Size"],
+    "sizes": [
+      "One Size"
+    ],
     "description": "Keep your little one protected from cold drafts with this premium knitted wool scarf. Features a smooth, lightweight loop design that fits comfortably without itching.",
     "safetyInfo": "Lightweight knit design. Soft fringeless edges.",
     "sizeGuide": "Dimensions: 80cm L x 10cm W.",
@@ -217,10 +2449,18 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Warm Gold", "value": "#FFC857"},
-      {"name": "Slate Grey", "value": "#8D99AE"}
+      {
+        "name": "Warm Gold",
+        "value": "#FFC857"
+      },
+      {
+        "name": "Slate Grey",
+        "value": "#8D99AE"
+      }
     ],
-    "sizes": ["One Size"],
+    "sizes": [
+      "One Size"
+    ],
     "description": "A stylish, double-layered woollen muffler scarf designed to block chilly winds. Soft, non-irritating, and durably knit for active winter play.",
     "safetyInfo": "Azo-free organic dye. Seamless flatlock seams.",
     "sizeGuide": "Dimensions: 80cm L x 10cm W.",
@@ -242,9 +2482,14 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Multi-Color Pack", "value": "#FFC857"}
+      {
+        "name": "Multi-Color Pack",
+        "value": "#FFC857"
+      }
     ],
-    "sizes": ["One Size"],
+    "sizes": [
+      "One Size"
+    ],
     "description": "Protect your newborn from accidental scratches with these gentle woollen mittens. Seamless, snug cuffs keep them secure and warm all night.",
     "safetyInfo": "Azo-free organic dye. Stretchy seamless wrist cuffs.",
     "sizeGuide": "Newborn length: 8cm.",
@@ -266,41 +2511,19 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Multi-Color Pack", "value": "#FFC857"}
+      {
+        "name": "Multi-Color Pack",
+        "value": "#FFC857"
+      }
     ],
-    "sizes": ["One Size"],
+    "sizes": [
+      "One Size"
+    ],
     "description": "A colorful pack of hand-knitted mittens in organic, baby-grade wool. Perfectly shaped to offer warmth, flexibility, and safety for baby's delicate hands.",
     "safetyInfo": "Azo-free organic dye. Stretchy seamless wrist cuffs.",
     "sizeGuide": "Newborn length: 8cm.",
     "imageBg": "#ECE4DB",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_b1f703b791404661bd521b073bfd0dbc~mv2.jpg"
-  },
-
-
-  {
-    "id": "prod-022",
-    "name": "New Born Baby Woollen Sweater Set - Snowflake Knit",
-    "category": "sweaters",
-    "categoryDisplay": "Sweaters",
-    "price": 799,
-    "originalPrice": 1299,
-    "discount": "38% OFF",
-    "rating": 4.8,
-    "reviewsCount": 53,
-    "ageRange": "0-6 Months",
-    "gender": "Unisex",
-    "inStock": true,
-    "isNew": false,
-    "colors": [
-      {"name": "Snow White", "value": "#FFFFFF"},
-      {"name": "Sky Blue", "value": "#AED9E0"}
-    ],
-    "sizes": ["0-3M", "3-6M"],
-    "description": "Lovely snowflake knitted newborn sweater suit. Includes warm full-sleeved sweater, cozy pants, cap and mittens. Highly giftable set.",
-    "safetyInfo": "100% fine woollen weave. Soft non-binding elastic threads.",
-    "sizeGuide": "0-3M (Height: 50-62cm) | 3-6M (Height: 62-68cm).",
-    "imageBg": "#E8F0FE",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_67fccaf193f5430cb37c6b2e6b7a4ecb~mv2.jpg"
   },
   {
     "id": "prod-024",
@@ -317,10 +2540,20 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Mint Green", "value": "#D8F3DC"},
-      {"name": "Soft Cream", "value": "#FFF9F2"}
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      },
+      {
+        "name": "Soft Cream",
+        "value": "#FFF9F2"
+      }
     ],
-    "sizes": ["M", "L", "XL"],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
     "description": "Delightful hand-finished baby sweater set designed for toddlers from 6 to 24 months. Features a buttoned collar and matching warm elasticated trousers.",
     "safetyInfo": "100% baby-safe acrylic wool. Dyed with organic azo-free dyes. Non-scratch stitching.",
     "sizeGuide": "Medium (6-12 Months) | Large (12-18 Months) | Extra Large (18-24 Months).",
@@ -342,10 +2575,20 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Denim Blue", "value": "#AED9E0"},
-      {"name": "Oatmeal Grey", "value": "#ECE4DB"}
+      {
+        "name": "Denim Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Oatmeal Grey",
+        "value": "#ECE4DB"
+      }
     ],
-    "sizes": ["M", "L", "XL"],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
     "description": "Beautiful cable-knit sweater set made from premium Vardhman babysoft wool. Highly insulated, stretchable, and soft on baby's skin.",
     "safetyInfo": "Anti-pilling soft acrylic blend. Certified lead-free buttons.",
     "sizeGuide": "Medium (6-12 Months) | Large (12-18 Months) | Extra Large (18-24 Months).",
@@ -367,10 +2610,20 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Ochre Yellow", "value": "#FFF3A8"},
-      {"name": "Slate Grey", "value": "#8D99AE"}
+      {
+        "name": "Ochre Yellow",
+        "value": "#FFF3A8"
+      },
+      {
+        "name": "Slate Grey",
+        "value": "#8D99AE"
+      }
     ],
-    "sizes": ["M", "L", "XL"],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
     "description": "A warm and stylish striped woollen set featuring a high collar to protect baby's neck. Perfect for outdoor strolls and winter outings.",
     "safetyInfo": "Hypoallergenic wool blend. Seamless cuffs for absolute comfort.",
     "sizeGuide": "Medium (6-12 Months) | Large (12-18 Months) | Extra Large (18-24 Months).",
@@ -392,15 +2645,60 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Rose Pink", "value": "#FFC6C6"},
-      {"name": "Ivory Cream", "value": "#FFF9F2"}
+      {
+        "name": "Rose Pink",
+        "value": "#FFC6C6"
+      },
+      {
+        "name": "Ivory Cream",
+        "value": "#FFF9F2"
+      }
     ],
-    "sizes": ["M", "L", "XL"],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
     "description": "Exquisitely detailed snowflake pattern knitted suit. Includes a front-open buttoned cardigan and matching pull-on pants.",
     "safetyInfo": "Hypoallergenic skin-friendly fibers. No lead attachments.",
     "sizeGuide": "Medium (6-12 Months) | Large (12-18 Months) | Extra Large (18-24 Months).",
     "imageBg": "#FDE2E4",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_fbad15375d61429a87294b7c8ffd2d8f~mv2.jpg"
+  },
+  {
+    "id": "prod-032",
+    "name": "Active Toddler Ribbed Suit - Charcoal Melange",
+    "category": "suits",
+    "categoryDisplay": "Baba Suits",
+    "price": 799,
+    "originalPrice": 1299,
+    "discount": "38% OFF",
+    "rating": 4.8,
+    "reviewsCount": 59,
+    "ageRange": "6-24 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": false,
+    "colors": [
+      {
+        "name": "Charcoal Melange",
+        "value": "#2E2A26"
+      },
+      {
+        "name": "Heather Grey",
+        "value": "#8D99AE"
+      }
+    ],
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "description": "These suits are available in Medium, Large, and Extra Large size only. This is for baby made with soft wool (6-24 Months). Includes a buttoned pullover and active elastic waistband pants.",
+    "safetyInfo": "Certified anti-pilling wool. No lead buttons.",
+    "sizeGuide": "Medium (6-12 Months) | Large (12-18 Months) | Extra Large (18-24 Months).",
+    "imageBg": "#ECE4DB",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_778daeaa93974459afe8f60591a8e5c1~mv2.png"
   },
   {
     "id": "prod-028",
@@ -417,10 +2715,18 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Buttercream", "value": "#FFF9F2"},
-      {"name": "Peach Spark", "value": "#FFE5D9"}
+      {
+        "name": "Buttercream",
+        "value": "#FFF9F2"
+      },
+      {
+        "name": "Peach Spark",
+        "value": "#FFE5D9"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "Ultra-gentle sweater set specifically tailored for newborns (0-3 Months). Features front ribbon closures for fuss-free dressing.",
     "safetyInfo": "Flatlock comfort stitching to prevent chafing on baby's sensitive skin.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
@@ -442,10 +2748,18 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Soft Peach", "value": "#FFE5D9"},
-      {"name": "Pure White", "value": "#FFFFFF"}
+      {
+        "name": "Soft Peach",
+        "value": "#FFE5D9"
+      },
+      {
+        "name": "Pure White",
+        "value": "#FFFFFF"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "Traditional hand-knitted comfort for newborns. Made with hypoallergenic organic dyes and certified skin-safe wool.",
     "safetyInfo": "Certified baby grade wool under OEKO-TEX Standard 100.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
@@ -467,10 +2781,18 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Sky Blue", "value": "#AED9E0"},
-      {"name": "Soft Grey", "value": "#D3D3D3"}
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      },
+      {
+        "name": "Soft Grey",
+        "value": "#D3D3D3"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "Adorable hooded sweater set featuring bear ears on the hood. Complete with a soft woollen pant, booties, and a matching cap.",
     "safetyInfo": "Thermal regulation technology. Certified safe dye processing.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
@@ -492,39 +2814,19 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Pure White", "value": "#FFFFFF"}
+      {
+        "name": "Pure White",
+        "value": "#FFFFFF"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "Elegant pointelle-stitch white woollen set, ideal for naming ceremonies or homecomings. Super soft, breathable warmth.",
     "safetyInfo": "Zero chemical bleach. Hypoallergenic organic cotton blend.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
     "imageBg": "#EDF2F4",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_b71cc3573f71482c9d18017a611bfa0e~mv2.png"
-  },
-  {
-    "id": "prod-032",
-    "name": "Active Toddler Ribbed Suit - Charcoal Melange",
-    "category": "suits",
-    "categoryDisplay": "Baba Suits",
-    "price": 799,
-    "originalPrice": 1299,
-    "discount": "38% OFF",
-    "rating": 4.8,
-    "reviewsCount": 59,
-    "ageRange": "6-24 Months",
-    "gender": "Unisex",
-    "inStock": true,
-    "isNew": false,
-    "colors": [
-      {"name": "Charcoal Melange", "value": "#2E2A26"},
-      {"name": "Heather Grey", "value": "#8D99AE"}
-    ],
-    "sizes": ["M", "L", "XL"],
-    "description": "These suits are available in Medium, Large, and Extra Large size only. This is for baby made with soft wool (6-24 Months). Includes a buttoned pullover and active elastic waistband pants.",
-    "safetyInfo": "Certified anti-pilling wool. No lead buttons.",
-    "sizeGuide": "Medium (6-12 Months) | Large (12-18 Months) | Extra Large (18-24 Months).",
-    "imageBg": "#ECE4DB",
-    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_778daeaa93974459afe8f60591a8e5c1~mv2.png"
   },
   {
     "id": "prod-033",
@@ -541,10 +2843,18 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Lilac Cream", "value": "#F3C6F1"},
-      {"name": "Pure White", "value": "#FFFFFF"}
+      {
+        "name": "Lilac Cream",
+        "value": "#F3C6F1"
+      },
+      {
+        "name": "Pure White",
+        "value": "#FFFFFF"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "These suits are available in small size only. This is for newborn baby made with soft wool (0-3 Months). Includes a cozy buttoned cardigan and matching trousers.",
     "safetyInfo": "Nickel-free snap closures. Organic cotton-wool blend.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
@@ -566,9 +2876,14 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Mint Green", "value": "#D8F3DC"}
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "These suits are available in small size only. This is for newborn baby made with soft wool (0-3 Months). Crafted carefully with seamless sleeves to prevent any rubbing or scratching.",
     "safetyInfo": "Hypoallergenic wool blend. Azo-free prints.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
@@ -590,14 +2905,48 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Lemon Yellow", "value": "#FFF3A8"}
+      {
+        "name": "Lemon Yellow",
+        "value": "#FFF3A8"
+      }
     ],
-    "sizes": ["Small"],
+    "sizes": [
+      "Small"
+    ],
     "description": "These suits are available in small size only. This is for newborn baby made with soft wool (0-3 Months). Keeps baby cozy during bedtime or naps with warm knit coverings.",
     "safetyInfo": "Thermal regulation technology. Seamless flatlock seams.",
     "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
     "imageBg": "#FFF9F2",
     "imageUrl": "https://static.wixstatic.com/media/ab3cdc_4fa444e72a8d49c3859e6c9e4277b01a~mv2.png"
+  },
+  {
+    "id": "prod-036",
+    "name": "New Born Cable-Knit Sweater Set - Cozy Oatmeal",
+    "category": "suits",
+    "categoryDisplay": "Baba Suits",
+    "price": 749,
+    "originalPrice": 1249,
+    "discount": "40% OFF",
+    "rating": 4.8,
+    "reviewsCount": 32,
+    "ageRange": "0-3 Months",
+    "gender": "Unisex",
+    "inStock": true,
+    "isNew": true,
+    "colors": [
+      {
+        "name": "Oatmeal Cream",
+        "value": "#F5EBE0"
+      }
+    ],
+    "sizes": [
+      "Small"
+    ],
+    "description": "These suits are available in small size only. This is for new born baby made with soft wool. (0-3 Months)",
+    "safetyInfo": "100% baby-safe acrylic wool. Dyed with organic azo-free dyes. Non-scratch elastic stitching.",
+    "sizeGuide": "Small (0-3 Months, Height: 50-62cm, Weight: 3-5.5kg).",
+    "imageBg": "#F5EBE0",
+    "imageUrl": "https://static.wixstatic.com/media/ab3cdc_5d38772c7e3d4459960d8dacc9b7d4bd~mv2.png"
   },
   {
     "id": "prod-037",
@@ -614,10 +2963,18 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Mint Green", "value": "#D8F3DC"},
-      {"name": "Warm Cream", "value": "#FFF9F2"}
+      {
+        "name": "Mint Green",
+        "value": "#D8F3DC"
+      },
+      {
+        "name": "Warm Cream",
+        "value": "#FFF9F2"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "Super cozy and breathable, this classic knit baby blanket is made from certified skin-safe woollen yarns. Perfect for keeping newborns warm in cradles or strollers.",
     "safetyInfo": "100% baby-safe acrylic wool. Dyed with organic azo-free dyes.",
     "sizeGuide": "Size: 100cm L x 120cm W.",
@@ -639,10 +2996,18 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Buttercup Yellow", "value": "#FFF3A8"},
-      {"name": "Soft Cream", "value": "#FFF9F2"}
+      {
+        "name": "Buttercup Yellow",
+        "value": "#FFF3A8"
+      },
+      {
+        "name": "Soft Cream",
+        "value": "#FFF9F2"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "Delightful baby blanket featuring lovely embossed star details. Dual-layered flannel lining provides premium insulation during extreme winter cold.",
     "safetyInfo": "Anti-pilling fleece backing. Zero chemical bleach.",
     "sizeGuide": "Size: 100cm L x 120cm W.",
@@ -664,9 +3029,14 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Sky Blue", "value": "#AED9E0"}
+      {
+        "name": "Sky Blue",
+        "value": "#AED9E0"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "Beautiful sky blue fleece blanket, perfect for baby boys. High-quality Vardhman woollen blends provide touchable softness and certified anti-allergy protection.",
     "safetyInfo": "Thermal regulation technology. Certified safe fabrics under OEKO-TEX Standard 100.",
     "sizeGuide": "Size: 100cm L x 120cm W.",
@@ -688,9 +3058,14 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Petal Pink", "value": "#FFC6C6"}
+      {
+        "name": "Petal Pink",
+        "value": "#FFC6C6"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "Snug and warm rose-pink fleece blanket with delicate star print patterns. Exceptionally warm, breathable, and machine-wash safe for easy daily care.",
     "safetyInfo": "Hypoallergenic polyester fleece. Machine-wash safe.",
     "sizeGuide": "Size: 100cm L x 120cm W.",
@@ -712,9 +3087,14 @@
     "inStock": true,
     "isNew": false,
     "colors": [
-      {"name": "Lemon Yellow", "value": "#FFF3A8"}
+      {
+        "name": "Lemon Yellow",
+        "value": "#FFF3A8"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "Lovely soft yellow embossed baby blanket with star texture. Made with OEKO-TEX Standard 100 Class 1 certified fabrics for newborn safety.",
     "safetyInfo": "Allergy-tested fleece fabrics. Dyed with baby-grade colors.",
     "sizeGuide": "Size: 100cm L x 120cm W.",
@@ -736,9 +3116,14 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Pure Ivory", "value": "#FFF9F2"}
+      {
+        "name": "Pure Ivory",
+        "value": "#FFF9F2"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "A traditional hand-knit ivory woollen blanket crafted to provide mother-like warmth. Snug fit, lightweight, and perfect for swaddling.",
     "safetyInfo": "100% fine woollen weave. Soft non-binding elastic threads.",
     "sizeGuide": "Size: 100cm L x 120cm W.",
@@ -760,9 +3145,14 @@
     "inStock": true,
     "isNew": true,
     "colors": [
-      {"name": "Snow White", "value": "#FFFFFF"}
+      {
+        "name": "Snow White",
+        "value": "#FFFFFF"
+      }
     ],
-    "sizes": ["100cm x 120cm"],
+    "sizes": [
+      "100cm x 120cm"
+    ],
     "description": "Beautiful snow white baby blanket featuring knitted snowflake patterns. Perfect for naming ceremonies, homecomings, or as a premium baby shower gift.",
     "safetyInfo": "Nickel-free secure threads. Standard size-safe stitching.",
     "sizeGuide": "Size: 100cm L x 120cm W.",

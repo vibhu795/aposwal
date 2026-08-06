@@ -396,6 +396,18 @@
 }
 
 /* Responsive Overrides */
+@media (max-width: 1200px) {
+  .desktop-navigation {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-list {
+    gap: 24px;
+    padding: 0 20px;
+    width: max-content;
+  }
+}
+
 @media (max-width: 992px) {
   .nav-list {
     gap: 20px;
@@ -433,4 +445,94 @@
   .header-actions {
     gap: 8px;
   }
+  .search-bar-container {
+    display: none;
+  }
+}
+
+/* Search Autocomplete Suggestions Dropdown */
+.search-bar-container {
+  position: relative;
+  flex-grow: 1;
+  max-width: 500px;
+  z-index: 1001;
+}
+
+.search-bar-form {
+  width: 100%;
+}
+
+.search-suggestions-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
+  background-color: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 1002;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.suggestion-item:hover {
+  background-color: var(--bg-warm);
+}
+
+.suggestion-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-warm);
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.suggestion-img-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.suggestion-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--primary);
+}
+
+.suggestion-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.suggestion-name {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.suggestion-category {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+  margin-top: 2px;
 }

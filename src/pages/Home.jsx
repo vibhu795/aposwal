@@ -12,7 +12,9 @@ import babyBlanketImg from '../assets/baby_blanket.png';
 import babyBeanieImg from '../assets/baby_beanie.png';
 import teddyBearImg from '../assets/teddy_bear.png';
 import babyOnesieHeroImg from '../assets/baby_onesie_hero.png';
-import babyCarrierImg from '../assets/baby_carrier.png';
+import blanketsImg from '../assets/blankets.png';
+import fursuitsImg from '../assets/fursuits.png';
+import sweaterImg from '../assets/sweater.png';
 
 export const Home = () => {
   const { products, navigateTo } = useContext(AppContext);
@@ -27,9 +29,10 @@ export const Home = () => {
       desc: 'Handcrafted cardigans and check print sweater sets knitted with premium babysoft wool.',
       cta: 'Explore Sweaters',
       category: 'sweaters',
-      bgGradient: 'linear-gradient(135deg, #FFE3E0 0%, #FFF0D4 100%)',
-      badgeColor: '#FF6B35',
-      illustration: teddyBearImg
+      bgGradient: 'linear-gradient(135deg, #FAF7F2 0%, #EAE2D5 100%)',
+      badgeColor: '#A38E75',
+      illustration: sweaterImg,
+      clipCircle: true
     },
     {
       id: 2,
@@ -38,9 +41,10 @@ export const Home = () => {
       desc: 'Double-zipped velvet fleece onesies with ears on the hood, keeping infants cozy down to 10°C.',
       cta: 'Shop Baba Suits',
       category: 'suits',
-      bgGradient: 'linear-gradient(135deg, #E0F2F1 0%, #F5FBEF 100%)',
-      badgeColor: '#8BC34A',
-      illustration: babyOnesieHeroImg
+      bgGradient: 'linear-gradient(135deg, #F0F5FA 0%, #D2E4F6 100%)',
+      badgeColor: '#4A88C5',
+      illustration: fursuitsImg,
+      clipCircle: true
     },
     {
       id: 3,
@@ -49,9 +53,10 @@ export const Home = () => {
       desc: 'Heavy double-layered fleece star-print baby blankets, safe for skin contact and crib bedding.',
       cta: 'Explore Blankets',
       category: 'blankets',
-      bgGradient: 'linear-gradient(135deg, #E8F0FE 0%, #F3E8FF 100%)',
-      badgeColor: '#4FB0C6',
-      illustration: babyCarrierImg
+      bgGradient: 'linear-gradient(135deg, #FAF4EE 0%, #E3D1C4 100%)',
+      badgeColor: '#8E7C68',
+      illustration: blanketsImg,
+      clipCircle: true
     }
   ];
 
@@ -116,11 +121,23 @@ export const Home = () => {
               <div className="dot dot-3" style={{ backgroundColor: '#4FB0C6' }}></div>
             </div>
             {/* Cute illustration drawing */}
-            <img 
-              src={slides[currentSlide].illustration} 
-              alt={slides[currentSlide].title} 
-              className="graphic-image" 
-            />
+            {slides[currentSlide].illustration && (
+              slides[currentSlide].clipCircle ? (
+                <div className="graphic-image-mask">
+                  <img 
+                    src={slides[currentSlide].illustration} 
+                    alt={slides[currentSlide].title} 
+                    className="graphic-image" 
+                  />
+                </div>
+              ) : (
+                <img 
+                  src={slides[currentSlide].illustration} 
+                  alt={slides[currentSlide].title} 
+                  className="graphic-image" 
+                />
+              )
+            )}
           </div>
 
           {/* Navigation Controls */}

@@ -24,7 +24,7 @@
 /* 1. Carousel Styles */
 .hero-carousel-section {
   margin-top: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 80px;
 }
 
 .carousel-wrapper {
@@ -118,6 +118,24 @@
   animation: bounceSlow 3s ease-in-out infinite;
 }
 
+.graphic-image-mask {
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.graphic-image-mask .graphic-image {
+  width: 212px;
+  height: 212px;
+  object-fit: cover;
+}
+
 /* Floating Dots on Carousel Graphic */
 .dot {
   position: absolute;
@@ -187,13 +205,15 @@
 
 /* 2. Category grid layout */
 .shop-by-category {
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .category-tiles-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
 }
 
 .category-tile-card {
@@ -204,6 +224,8 @@
   text-align: center;
   cursor: pointer;
   box-shadow: var(--shadow-sm);
+  width: calc(20% - 25.6px);
+  box-sizing: border-box;
 }
 
 .category-tile-icon {
@@ -226,6 +248,7 @@
   width: 55px;
   height: 55px;
   object-fit: contain;
+  display: block;
   transition: transform var(--transition-fast);
 }
 
@@ -241,7 +264,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .promo-banner-card {
@@ -313,7 +336,7 @@
 
 /* 4. Featured Scroll Carousel Row */
 .featured-products {
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .section-header {
@@ -347,7 +370,7 @@
 
 /* 5. Home products grid */
 .new-arrivals {
-  margin-bottom: 56px;
+  margin-bottom: 80px;
 }
 
 .home-products-grid {
@@ -362,7 +385,7 @@
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
   padding: 48px 0;
-  margin-top: 32px;
+  margin-top: 0;
 }
 
 .trust-badges-container {
@@ -439,7 +462,10 @@
   .carousel-title { font-size: 2rem; }
   .carousel-subtitle { font-size: 1.15rem; }
   .category-tiles-grid {
-    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .category-tile-card {
+    width: calc(33.333% - 21.33px) !important;
   }
   .promo-banners {
     grid-template-columns: 1fr;
@@ -482,7 +508,79 @@
     width: 90px;
     height: 90px;
   }
+  .graphic-image-mask {
+    width: 132px;
+    height: 132px;
+  }
+  .graphic-image-mask .graphic-image {
+    width: 152px;
+    height: 152px;
+  }
   .carousel-arrow {
     display: none;
+  }
+
+  /* Section Spacing & Headings */
+  .hero-carousel-section { margin-bottom: 48px; }
+  .shop-by-category { margin-bottom: 48px; }
+  .promo-banners { margin-bottom: 48px; }
+  .featured-products { margin-bottom: 48px; }
+  .new-arrivals { margin-bottom: 48px; }
+
+  .section-title {
+    font-size: 1.6rem !important;
+  }
+  .section-subtitle {
+    font-size: 0.85rem !important;
+    margin-bottom: 24px !important;
+  }
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .section-header button {
+    align-self: flex-start;
+  }
+
+  /* Category Tiles Mobile Optimization */
+  .category-tiles-grid {
+    gap: 32px;
+  }
+  .category-tile-card {
+    padding: 16px 10px !important;
+    gap: 8px !important;
+    width: calc(50% - 16px) !important;
+  }
+  .category-tile-icon {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .category-img {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  .category-tile-name {
+    font-size: 0.85rem !important;
+  }
+
+  /* Promo Banners Mobile Optimization */
+  .promo-banner-card {
+    padding: 24px 20px !important;
+  }
+  .promo-banner-card h3 {
+    font-size: 1.25rem !important;
+  }
+  .promo-banner-card p {
+    font-size: 0.8rem !important;
+    margin-bottom: 12px !important;
+    max-width: 65% !important;
+  }
+  .banner-img {
+    width: 100px !important;
+    height: 100px !important;
+    right: 12px !important;
+    bottom: 8px !important;
   }
 }

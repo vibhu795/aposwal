@@ -91,11 +91,6 @@ export const Cart = () => {
                       <h3 className="cart-item-name" onClick={() => navigateTo('product-detail', item.product.id)}>
                         {item.product.name}
                       </h3>
-                      <div className="cart-item-attributes">
-                        <span>Color: <strong>{item.color}</strong></span>
-                        <span className="dot-divider">•</span>
-                        <span>Size: <strong>{item.size}</strong></span>
-                      </div>
                       <span className="cart-item-unit-price">₹{item.product.price} each</span>
                     </div>
                   </div>

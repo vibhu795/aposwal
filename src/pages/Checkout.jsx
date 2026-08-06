@@ -367,7 +367,6 @@ export const Checkout = () => {
                   <div className="compact-item-meta">
                     <span className="compact-qty">{item.quantity}x</span>
                     <span className="compact-name">{item.product.name}</span>
-                    <span className="compact-specs">{item.color} / {item.size}</span>
                   </div>
                   <span className="compact-price">₹{item.product.price * item.quantity}</span>
                 </div>

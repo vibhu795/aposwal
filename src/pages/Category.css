@@ -99,10 +99,7 @@
 
 /* 3. Main Grid Sidebar + Products */
 .category-main-content {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 32px;
-  align-items: start;
+  display: block;
 }
 
 /* Sidebar styling */
@@ -232,7 +229,7 @@
 
 .category-products-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -316,18 +313,12 @@
 }
 
 /* Responsive Overrides */
+@media (max-width: 1200px) {
+  .category-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 992px) {
-  .category-main-content {
-    grid-template-columns: 1fr;
-  }
-  .filters-sidebar {
-    display: none;
-  }
-  .mobile-filter-trigger {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-  }
   .category-products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -338,4 +329,55 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+}
+
+/* Baba Suits size filters */
+.baba-suits-size-filters {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 12px 20px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.size-filter-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.size-filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.size-filter-opt-btn {
+  background-color: var(--bg-warm);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+  padding: 6px 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.size-filter-opt-btn:hover {
+  background-color: var(--border-light);
+  transform: translateY(-1px);
+}
+
+.size-filter-opt-btn.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
 }

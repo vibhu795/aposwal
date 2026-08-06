@@ -2,6 +2,7 @@ import React, { useContext, useState, useMemo } from 'react';
 import { AppContext } from '../context/AppContext';
 import { ProductCard } from '../components/ProductCard';
 import { SlidersHorizontal, ArrowUpDown, X, Filter } from 'lucide-react';
+import { getSearchRelevanceScore } from '../utils/search';
 import './Category.css';
 
 export const Category = () => {
@@ -17,12 +18,20 @@ export const Category = () => {
   } = useContext(AppContext);
 
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [selectedSuiteSize, setSelectedSuiteSize] = useState('all');
+  const [selectedSweaterType, setSelectedSweaterType] = useState('all');
+
+  // Reset Baba Suit and Sweater filters when changing categories or search query
+  React.useEffect(() => {
+    setSelectedSuiteSize('all');
+    setSelectedSweaterType('all');
+  }, [filterCategory, searchQuery]);
 
   // Constants for filters options
   const filterOptions = {
     ageRanges: ['0-6 Months', '6-12 Months', '3-36 Months', '12-36 Months', '3-18 Months', '6-24 Months', '1-5 Years', '18 Months - 6 Years', 'Maternity'],
     genders: ['Boys', 'Girls', 'Unisex', 'Women'],
-    sizes: ['0-3M', '3-6M', '6-12M', '1-2Y', '2-3Y', '3-4Y', '4-5Y', 'S', 'M', 'L', 'XL', 'One Size', 'Free Size']
+    sizes: ['0-3M', '3-6M', '6-12M', '1-2Y', '2-3Y', '3-4Y', '4-5Y', 'Small', 'Medium', 'Large', 'Extra Large', 'One Size', 'Free Size']
   };
 
   // Categories definition for header filter chips
@@ -32,7 +41,12 @@ export const Category = () => {
     { name: 'Frocks', key: 'frocks' },
     { name: 'Baba Suits', key: 'suits' },
     { name: 'Blankets', key: 'blankets' },
-    { name: 'Accessories', key: 'accessories' }
+    { name: 'Accessories', key: 'accessories' },
+    { name: 'Swed', key: 'swed' },
+    { name: 'Caps', key: 'caps' },
+    { name: 'Monkey Caps', key: 'monkey-caps' },
+    { name: 'Vest', key: 'vests' },
+    { name: 'Babysoft fursuits', key: 'babysoft-fursuits' }
   ];
 
   // Handle Sort Change
@@ -71,13 +85,16 @@ export const Category = () => {
     }
 
     // 2. Search Query Filter
+    const searchScores = new Map();
     if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      result = result.filter(
-        p => p.name.toLowerCase().includes(query) || 
-             p.categoryDisplay.toLowerCase().includes(query) ||
-             p.description.toLowerCase().includes(query)
-      );
+      result = result.filter(p => {
+        const score = getSearchRelevanceScore(p, searchQuery);
+        if (score > 0) {
+          searchScores.set(p.id, score);
+          return true;
+        }
+        return false;
+      });
     }
 
     // 3. Age Range Filter
@@ -93,8 +110,39 @@ export const Category = () => {
     // 5. Size Filter
     if (filters.sizes.length > 0) {
       result = result.filter(p => 
-        p.sizes && p.sizes.some(size => filters.sizes.includes(size))
+        p.sizes && p.sizes.some(size => {
+          return filters.sizes.some(filterSize => {
+            if (filterSize === size) return true;
+            // Map S / Small
+            if ((filterSize === 'Small' || filterSize === 'S') && (size === 'Small' || size === 'S')) return true;
+            // Map M / Medium / mean
+            if ((filterSize === 'Medium' || filterSize === 'M' || filterSize === 'mean') && (size === 'Medium' || size === 'M' || size === 'mean')) return true;
+            // Map L / Large
+            if ((filterSize === 'Large' || filterSize === 'L') && (size === 'Large' || size === 'L')) return true;
+            // Map XL / Extra Large
+            if ((filterSize === 'Extra Large' || filterSize === 'XL') && (size === 'Extra Large' || size === 'XL')) return true;
+            return false;
+          });
+        })
       );
+    }
+
+    // 5b. Baba Suits specific size filter
+    if (filterCategory === 'suits' && selectedSuiteSize !== 'all') {
+      result = result.filter(p => 
+        p.sizes && p.sizes.some(size => {
+          if (selectedSuiteSize === 'Small' && (size === 'Small' || size === 'S')) return true;
+          if (selectedSuiteSize === 'Medium' && (size === 'Medium' || size === 'M' || size === 'mean')) return true;
+          if (selectedSuiteSize === 'Large' && (size === 'Large' || size === 'L')) return true;
+          if (selectedSuiteSize === 'Extra Large' && (size === 'Extra Large' || size === 'XL')) return true;
+          return false;
+        })
+      );
+    }
+
+    // 5c. Sweaters specific style filter
+    if (filterCategory === 'sweaters' && selectedSweaterType !== 'all') {
+      result = result.filter(p => p.sweaterType === selectedSweaterType);
     }
 
     // 6. Price Filter
@@ -112,10 +160,16 @@ export const Category = () => {
       result.sort((a, b) => b.price - a.price);
     } else if (filters.sortBy === 'rating') {
       result.sort((a, b) => b.rating - a.rating);
+    } else if (searchQuery) {
+      result.sort((a, b) => {
+        const scoreA = searchScores.get(a.id) || 0;
+        const scoreB = searchScores.get(b.id) || 0;
+        return scoreB - scoreA;
+      });
     } // default is popularity (raw index or ID order)
 
     return result;
-  }, [products, filterCategory, searchQuery, filters]);
+  }, [products, filterCategory, searchQuery, filters, selectedSuiteSize, selectedSweaterType]);
 
   // Compute category header label
   const categoryHeaderTitle = useMemo(() => {
@@ -126,122 +180,60 @@ export const Category = () => {
 
   return (
     <div className="category-page-container container">
-      {/* 1. Category Chip Quick Links */}
-      <div className="category-chips-row">
-        {categoryChips.map((chip) => (
-          <button 
-            key={chip.key}
-            className={`category-chip ${filterCategory === chip.key && !searchQuery ? 'active' : ''}`}
-            onClick={() => {
-              setSearchQuery(''); // Clear search on chip click
-              setFilterCategory(chip.key);
-            }}
-          >
-            {chip.name}
-          </button>
-        ))}
-      </div>
 
       {/* 2. Top bar: Summary & Sorting */}
       <div className="category-top-controls">
         <div className="summary-text">
           Showing <strong>{filteredProducts.length}</strong> products
         </div>
-        <div className="controls-right">
-          {/* Mobile Filter Button */}
-          <button className="mobile-filter-trigger btn btn-outline" onClick={() => setMobileFiltersOpen(true)}>
-            <Filter size={16} /> Filters
-          </button>
-        </div>
+
       </div>
 
       {/* 3. Main grid containing left filters + right products */}
       <div className="category-main-content">
-        {/* Left Sidebar Filter (Desktop) */}
-        <aside className="filters-sidebar">
-          <div className="sidebar-section-header">
-            <SlidersHorizontal size={18} />
-            <h3>Filters</h3>
-            <button className="clear-all-link" onClick={resetFilters}>Clear All</button>
-          </div>
-
-          <div className="sidebar-divider"></div>
-
-          {/* Age range checkboxes */}
-          <div className="filter-group">
-            <h4>Age Range</h4>
-            <div className="checkbox-list">
-              {filterOptions.ageRanges.map((age) => (
-                <label key={age} className="checkbox-item">
-                  <input 
-                    type="checkbox" 
-                    checked={filters.ageRange.includes(age)}
-                    onChange={() => handleCheckboxChange('ageRange', age)}
-                  />
-                  <span>{age}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
-
-
-          <div className="sidebar-divider"></div>
-
-          {/* Gender */}
-          <div className="filter-group">
-            <h4>Gender</h4>
-            <div className="checkbox-list">
-              {filterOptions.genders.map((gender) => (
-                <label key={gender} className="checkbox-item">
-                  <input 
-                    type="checkbox"
-                    checked={filters.gender.includes(gender)}
-                    onChange={() => handleCheckboxChange('gender', gender)}
-                  />
-                  <span>{gender}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div className="sidebar-divider"></div>
-
-          {/* Sizes */}
-          <div className="filter-group">
-            <h4>Sizes</h4>
-            <div className="checkbox-list inline-grid">
-              {filterOptions.sizes.map((size) => (
-                <label key={size} className="checkbox-item">
-                  <input 
-                    type="checkbox"
-                    checked={filters.sizes.includes(size)}
-                    onChange={() => handleCheckboxChange('sizes', size)}
-                  />
-                  <span>{size}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div className="sidebar-divider"></div>
-
-          {/* Availability */}
-          <div className="filter-group">
-            <label className="checkbox-item in-stock-label">
-              <input 
-                type="checkbox"
-                checked={filters.inStockOnly}
-                onChange={handleInStockToggle}
-              />
-              <strong>In Stock Only</strong>
-            </label>
-          </div>
-        </aside>
 
         {/* Right Product Grid */}
         <main className="products-list-panel">
           <h2 className="listing-header-title">{categoryHeaderTitle}</h2>
+          
+          {filterCategory === 'suits' && (
+            <div className="baba-suits-size-filters">
+              <span className="size-filter-label">Filter by Size:</span>
+              <div className="size-filter-buttons">
+                {['all', 'Small', 'Medium', 'Large', 'Extra Large'].map((sizeOpt) => (
+                  <button
+                    key={sizeOpt}
+                    className={`size-filter-opt-btn ${selectedSuiteSize === sizeOpt ? 'active' : ''}`}
+                    onClick={() => setSelectedSuiteSize(sizeOpt)}
+                  >
+                    {sizeOpt === 'all' ? 'All Sizes' : sizeOpt}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {filterCategory === 'sweaters' && (
+            <div className="baba-suits-size-filters">
+              <span className="size-filter-label">Filter by Type:</span>
+              <div className="size-filter-buttons">
+                {[
+                  { key: 'all', label: 'All Sweaters' },
+                  { key: 'round-neck', label: 'Round Neck' },
+                  { key: 'front-open', label: 'Front Open' },
+                  { key: 'regular', label: 'Others' }
+                ].map((typeOpt) => (
+                  <button
+                    key={typeOpt.key}
+                    className={`size-filter-opt-btn ${selectedSweaterType === typeOpt.key ? 'active' : ''}`}
+                    onClick={() => setSelectedSweaterType(typeOpt.key)}
+                  >
+                    {typeOpt.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           
           {filteredProducts.length === 0 ? (
             <div className="empty-products-state">
@@ -262,101 +254,6 @@ export const Category = () => {
         </main>
       </div>
 
-      {/* 4. MOBILE FILTERS SLIDE-UP DRAWER */}
-      {mobileFiltersOpen && (
-        <div className="mobile-drawer-overlay" onClick={() => setMobileFiltersOpen(false)}>
-          <div className="mobile-filters-drawer" onClick={(e) => e.stopPropagation()}>
-            <div className="drawer-header">
-              <h3>Filters</h3>
-              <div className="drawer-actions">
-                <button className="clear-all-link" onClick={resetFilters}>Clear All</button>
-                <button className="close-drawer-btn" onClick={() => setMobileFiltersOpen(false)} aria-label="Close filters">
-                  <X size={20} />
-                </button>
-              </div>
-            </div>
-
-            <div className="drawer-content">
-              {/* Age range */}
-              <div className="filter-group">
-                <h4>Age Range</h4>
-                <div className="checkbox-list">
-                  {filterOptions.ageRanges.map((age) => (
-                    <label key={age} className="checkbox-item">
-                      <input 
-                        type="checkbox" 
-                        checked={filters.ageRange.includes(age)}
-                        onChange={() => handleCheckboxChange('ageRange', age)}
-                      />
-                      <span>{age}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-
-
-              <div className="sidebar-divider"></div>
-
-              {/* Gender */}
-              <div className="filter-group">
-                <h4>Gender</h4>
-                <div className="checkbox-list">
-                  {filterOptions.genders.map((gender) => (
-                    <label key={gender} className="checkbox-item">
-                      <input 
-                        type="checkbox"
-                        checked={filters.gender.includes(gender)}
-                        onChange={() => handleCheckboxChange('gender', gender)}
-                      />
-                      <span>{gender}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div className="sidebar-divider"></div>
-
-              {/* Sizes */}
-              <div className="filter-group">
-                <h4>Sizes</h4>
-                <div className="checkbox-list inline-grid">
-                  {filterOptions.sizes.map((size) => (
-                    <label key={size} className="checkbox-item">
-                      <input 
-                        type="checkbox"
-                        checked={filters.sizes.includes(size)}
-                        onChange={() => handleCheckboxChange('sizes', size)}
-                      />
-                      <span>{size}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-
-              <div className="sidebar-divider"></div>
-
-              {/* Stock */}
-              <div className="filter-group">
-                <label className="checkbox-item">
-                  <input 
-                    type="checkbox"
-                    checked={filters.inStockOnly}
-                    onChange={handleInStockToggle}
-                  />
-                  <strong>In Stock Only</strong>
-                </label>
-              </div>
-            </div>
-
-            <div className="drawer-footer">
-              <button className="btn btn-primary w-full" onClick={() => setMobileFiltersOpen(false)}>
-                Apply Filters ({filteredProducts.length} Items)
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

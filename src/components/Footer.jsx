@@ -9,13 +9,35 @@ export const Footer = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail('');
-      setTimeout(() => setSubscribed(false), 5000);
+    if (!email) return;
+
+    const scriptUrl = import.meta.env.VITE_GOOGLE_SHEET_SCRIPT_URL;
+
+    if (scriptUrl) {
+      try {
+        const formData = new URLSearchParams();
+        formData.append('email', email);
+
+        await fetch(scriptUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: formData.toString()
+        });
+      } catch (error) {
+        console.error('Error submitting to Google Sheet:', error);
+      }
+    } else {
+      console.warn('VITE_GOOGLE_SHEET_SCRIPT_URL is not defined in the .env file.');
     }
+
+    setSubscribed(true);
+    setEmail('');
+    setTimeout(() => setSubscribed(false), 5000);
   };
 
   return (
@@ -29,12 +51,6 @@ export const Footer = () => {
           <p className="brand-pitch">
             Soft, breathable, and premium woollen wear for newborns and toddlers. Hand-knitted comfort crafted with care, tradition, and certified skin-friendly fibers.
           </p>
-          <div className="social-links">
-            <a href="#facebook" aria-label="Facebook"><Facebook size={18} /></a>
-            <a href="#instagram" aria-label="Instagram"><Instagram size={18} /></a>
-            <a href="#youtube" aria-label="Youtube"><Youtube size={18} /></a>
-            <a href="#twitter" aria-label="Twitter"><Twitter size={18} /></a>
-          </div>
         </div>
 
         {/* Shop Categories */}
@@ -90,15 +106,8 @@ export const Footer = () => {
       {/* Footer Bottom info and payments */}
       <div className="footer-bottom container">
         <p className="copyright-text">
-          &copy; {new Date().getFullYear()} AP Oswal Newborn Woollens. All rights reserved. Crafted with care in Jaipur.
+          The content of this site is copyright-protected and is the property of Ap Oswal.
         </p>
-        <div className="payment-badges">
-          <span className="payment-badge">UPI</span>
-          <span className="payment-badge">RuPay</span>
-          <span className="payment-badge">Visa</span>
-          <span className="payment-badge">MasterCard</span>
-          <span className="payment-badge">COD</span>
-        </div>
       </div>
     </footer>
   );

@@ -27,17 +27,17 @@ export const ProductDetail = () => {
   const [activeColor, setActiveColor] = useState(product.colors[0]?.name || 'Default');
   const [activeSize, setActiveSize] = useState(product.sizes[0] || 'Standard');
   const [quantity, setQuantity] = useState(1);
-  const [activeTab, setActiveTab] = useState('description');
+
+  // Reset selected swatches when the active product changes
+  React.useEffect(() => {
+    setActiveColor(product.colors[0]?.name || 'Default');
+    setActiveSize(product.sizes[0] || 'Standard');
+  }, [product]);
 
   // Verify wishlist saved state
   const isSaved = wishlist.some(item => item.id === product.id);
 
-  // Tab definitions
-  const tabs = [
-    { id: 'description', label: 'Description' },
-    { id: 'sizeguide', label: 'Size Guide' },
-    { id: 'safety', label: 'Safety Info' }
-  ];
+
 
   const handleQuantityIncrement = () => setQuantity(prev => prev + 1);
   const handleQuantityDecrement = () => setQuantity(prev => Math.max(1, prev - 1));
@@ -100,24 +100,6 @@ export const ProductDetail = () => {
               <SelectedProductIcon type={product.iconType} className="gallery-main-svg" color={activeColorHex} />
             )}
           </div>
-
-          <div className="gallery-thumbnails">
-            {product.colors.map((colorItem) => (
-              <button 
-                key={colorItem.name} 
-                className={`thumbnail-btn ${activeColor === colorItem.name ? 'active' : ''}`}
-                style={{ backgroundColor: colorItem.value + '22', borderColor: colorItem.value }}
-                onClick={() => setActiveColor(colorItem.name)}
-                title={colorItem.name}
-              >
-                {product.imageUrl ? (
-                  <img src={product.imageUrl} alt={colorItem.name} className="gallery-thumb-image" style={{ borderBottom: `4px solid ${colorItem.value}` }} />
-                ) : (
-                  <SelectedProductIcon type={product.iconType} className="gallery-thumb-svg" color={colorItem.value} />
-                )}
-              </button>
-            ))}
-          </div>
         </div>
 
         {/* Right Column: Spec and Selection */}
@@ -149,116 +131,22 @@ export const ProductDetail = () => {
             </p>
           </div>
 
-          <div className="detail-divider"></div>
-
-          {/* Trust note */}
-          <div className="shipping-trust-note">
-            <span>🚀 Dispatch within 24 hours. Free Shipping.</span>
-          </div>
         </div>
       </div>
 
-      {/* 3. TABS INFORMATION ACCORDION */}
+      {/* 3. PRODUCT DESCRIPTION SECTION */}
       <section className="product-tabs-section">
-        <div className="tabs-header-bar">
-          {tabs.map((tab) => (
-            <button 
-              key={tab.id}
-              className={`tab-link ${activeTab === tab.id ? 'active' : ''}`}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
         <div className="tab-body-content">
-          {activeTab === 'description' && (
-            <div className="tab-pane fade-in">
-              <h3>Product Overview</h3>
-              <p>{product.description}</p>
-              <h4 style={{ marginTop: '16px', marginBottom: '8px' }}>Key Highlights</h4>
-              <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <li>Hand-finished double-seam sewing to prevent threads from scratching baby's skin.</li>
-                <li>Premium organic fibers offer natural heat regulation and superior softness.</li>
-                <li>Made with environment-friendly water-soluble dyes.</li>
-              </ul>
-            </div>
-          )}
-
-          {activeTab === 'sizeguide' && (
-            <div className="tab-pane fade-in">
-              <h3>Size & Fit Guide</h3>
-              <p>Please refer to standard recommendations based on child height/weight dimensions below:</p>
-              <div className="size-guide-table-wrapper" style={{ marginTop: '16px' }}>
-                <table className="size-guide-table">
-                  <thead>
-                    <tr>
-                      <th>Size Label</th>
-                      <th>Height Recommended</th>
-                      <th>Weight Recommended</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>0-3 Months</td>
-                      <td>50 - 62 cm</td>
-                      <td>3.0 - 5.5 kg</td>
-                    </tr>
-                    <tr>
-                      <td>3-6 Months</td>
-                      <td>62 - 68 cm</td>
-                      <td>5.5 - 7.5 kg</td>
-                    </tr>
-                    <tr>
-                      <td>6-12 Months</td>
-                      <td>68 - 80 cm</td>
-                      <td>7.5 - 10.0 kg</td>
-                    </tr>
-                    <tr>
-                      <td>1-2 Years</td>
-                      <td>80 - 92 cm</td>
-                      <td>10.0 - 13.0 kg</td>
-                    </tr>
-                    <tr>
-                      <td>One Size / Free Size</td>
-                      <td>Standard Adjustable</td>
-                      <td>Up to 20 kg</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p style={{ marginTop: '12px', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                *Note: If your baby is in-between weights, we always recommend ordering one size up.
-              </p>
-            </div>
-          )}
-
-          {activeTab === 'safety' && (
-            <div className="tab-pane fade-in">
-              <h3>Material Certifications & Safety</h3>
-              <p>{product.safetyInfo}</p>
-              <div className="safety-grid-badges" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px', marginTop: '16px' }}>
-                <div className="safety-badge-card" style={{ padding: '12px', backgroundColor: 'var(--bg-warm)', borderRadius: 'var(--radius-sm)', textAlign: 'center' }}>
-                  <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '4px' }}>🌱</span>
-                  <strong>100% Organic</strong>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px' }}>GOTS Certified fibers</p>
-                </div>
-                <div className="safety-badge-card" style={{ padding: '12px', backgroundColor: 'var(--bg-warm)', borderRadius: 'var(--radius-sm)', textAlign: 'center' }}>
-                  <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '4px' }}>🛡️</span>
-                  <strong>Non-Toxic</strong>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px' }}>BPA & Lead Free paints</p>
-                </div>
-                <div className="safety-badge-card" style={{ padding: '12px', backgroundColor: 'var(--bg-warm)', borderRadius: 'var(--radius-sm)', textAlign: 'center' }}>
-                  <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '4px' }}>🧴</span>
-                  <strong>Hypoallergenic</strong>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '4px' }}>Tested on sensitive skin</p>
-                </div>
-              </div>
-            </div>
-          )}
-
-
+          <div className="tab-pane fade-in">
+            <h3>Product Overview</h3>
+            <p>{product.description}</p>
+            <h4 style={{ marginTop: '16px', marginBottom: '8px' }}>Key Highlights</h4>
+            <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <li>Hand-finished double-seam sewing to prevent threads from scratching baby's skin.</li>
+              <li>Premium organic fibers offer natural heat regulation and superior softness.</li>
+              <li>Made with environment-friendly water-soluble dyes.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
